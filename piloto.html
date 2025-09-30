@@ -10,6 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MotoGP-Piloto</title>
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css"/>
+      <link rel="icon" href="multimedia/icon.png" type="image/png">
+
 </head>
 
 <body>
@@ -85,6 +87,12 @@
                 <li>Dorsal : 23</li>
             
             </ul>
+            
+            <video controls preload="auto">
+                <source src="multimedia/Enea.mp4" type="video/mp4"/>
+                <source src="multimedia/Enea.webm" type="video/webm"/>
+            </video>
+
             <h3>Historico de Equipos</h3>
             <ol>   
 
@@ -99,30 +107,36 @@
         <section>
             <h3>Temporada Anterior</h3>
 
-                <table>
-                    <caption>Estadísticas de Temporada 2024</caption>
-                        <tr>
-                            <th>Puntos</th>
-                            <th>Posición Final</th>
-                            <th>Poles</th>
-                            <th>Victorias</th>
-                            <th>Podios</th>
+        <table>
+            <caption>Estadísticas de Temporada 2024</caption>
+            <thead>
+                <tr>
+                    <th scope="col" id="puntos">Puntos</th>
+                    <th scope="col" id="posicion">Posición Final</th>
+                    <th scope="col" id="poles">Poles</th>
+                    <th scope="col" id="victorias">Victorias</th>
+                    <th scope="col" id="podios">Podios</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row" id="fila1">Temporada 2024</th>
+                    <td headers="fila1 puntos">386</td>
+                    <td headers="fila1 posicion">4º</td>
+                    <td headers="fila1 poles">2</td>
+                    <td headers="fila1 victorias">2</td>
+                    <td headers="fila1 podios">9</td>
+                </tr>
+            </tbody>
+        </table>
 
-                        </tr>
-                        <tr>
-                            <td>386</td>
-                            <td>4º</td>
-                            <td>2</td>
-                            <td>2</td>
-                            <td>9</td>
-
-                        </tr>
-
-                </table>
         </section>
         <aside>
             <h3>Conceptos de MotoGP</h3>
-
+            <audio controls>
+                <source src="multimedia/pole.mp3" type="audio/mp3">
+                <source src="multimedia/pole.wav" type="audio/wav">
+            </audio>
             <dl>
                 <dt>Pole Position</dt>
                 <dd>La primera posición en la parrilla de salida, obtenida por el 
@@ -133,7 +147,7 @@
                     correctamente y mantener la velocidad.</dd>
 
                 <dt>HighSide/LowSide</dt>
-                <dd>ipos de caídas: el highside es cuando la moto lanza al piloto por encima, y el lowside 
+                <dd>Tipos de caídas: el highside es cuando la moto lanza al piloto por encima, y el lowside 
                     cuando se desliza hacia el interior de la curva.</dd>
 
                 <dt>Rebufo</dt>
