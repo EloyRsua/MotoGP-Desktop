@@ -1,2 +1,15 @@
 /*Eloy Rubio Suárez UO298184*/
 /*Estilos generales para el proyecto*/
+/*https://www.canva.com/colors/color-palettes/pensive-mood/*/
+/*https://webaim.org/resources/contrastchecker/*/
+
+/*Especificidad 001*/
+body{
+    font-family: Tahoma,sans-serif;
+}
+
+/*Especificidad 001*/
+header{
+    color : #FFFFFF;
+    background-color: #4e545c;
+}
