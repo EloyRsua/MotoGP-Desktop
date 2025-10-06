@@ -50,7 +50,7 @@ body {
 /*Especificidad 001*/
 header {
     background-color: var(--bg-light);
-    border-radius: 2em;
+    border-radius: 1em;
 }
 
 /*Especificidad 001*/
