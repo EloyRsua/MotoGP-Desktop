@@ -1,15 +1,105 @@
 /*Eloy Rubio Suárez UO298184*/
 /*Estilos generales para el proyecto*/
-/*https://www.canva.com/colors/color-palettes/pensive-mood/*/
 /*https://webaim.org/resources/contrastchecker/*/
+/*https://www.iamsajid.com/ui-colors/*/
+/*0,243*/ 
+
+/* Variables globales */
+
+:root {
+    --bg: hsl(300 0% 4%);        /* #0a0a0a */
+    --bg-light: hsl(0 0% 15%);   /* #262626 */
+    --text-h1: hsl(300 0% 100%); /* #ffffff */
+    --text-h2: hsl(300 0% 95%);  /* #f2f2f2 */
+    --text-h3: hsl(300 0% 90%);  /* #e5e5e5 */
+    --text: hsl(300 0% 80%);     /* #cccccc */
+    --primary: hsl(210, 100%, 72%); /* #70B8FF */
+    --secondary: hsl(29 64% 65%);/* #f2b866 */
+    --border: hsl(0 0% 28%);
+
+}
+
+/*CONTRASTES-COMPROBADOS CON EL CHECKER
+
+h1 sobre bg -> 19,79
+h2 sobre bg -> 17,68
+h3 sobre bg -> 15,71
+text sobre bg-> 12,32
+
+h1 sobre bg-light -> 15,13
+h2 sobre bg -> 13,51
+h3 sobre bg -> 12,01
+text sobre bg-> 9,42
+
+primary sobre bg -> 9,41
+secondary sobre bg -> 11,14
+
+primary sobre bg-light -> 7,19
+secondary sobre bg-light -> 8,52
+*/
+
+/* Estilos generales */
 
 /*Especificidad 001*/
-body{
-    font-family: Tahoma,sans-serif;
+body {
+    font-family: Tahoma, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
 }
 
 /*Especificidad 001*/
-header{
-    color : #FFFFFF;
-    background-color: #9499A4;
+header {
+    background-color: var(--bg-light);
+    border-radius: 2em;
+}
+
+/*Especificidad 001*/
+h2 {
+    text-align: center;
+    color: var(--text-h2);
+}
+
+/*Especificidad 001*/
+h3 {
+    text-align: center;
+    color: var(--text-h3);
+}
+
+/*Especificidad 001*/
+dt{
+    color: var(--text-h1);
+    
+}
+
+
+/*Especificidad 001*/
+a{
+    color: var(--primary);
+}
+
+/*Especificidad 011*/
+a:hover{
+    color: var(--secondary);
+}
+
+/*Especificidad 001*/
+section,aside{
+    background-color: var(--bg-light);
+    border-radius: 1em;
+}
+
+
+/*Especificidad 001*/
+table {
+    margin: auto;
+    border-collapse: collapse;
+
+}
+
+/*Especificidad 002*/
+table th, table td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.6em;
+    border:  solid var(--border);
 }
