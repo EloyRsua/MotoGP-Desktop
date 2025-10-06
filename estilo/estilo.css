@@ -7,15 +7,15 @@
 /* Variables globales */
 
 :root {
-    --bg: hsl(300 0% 4%);        /* #0a0a0a */
-    --bg-light: hsl(0 0% 15%);   /* #262626 */
-    --text-h1: hsl(300 0% 100%); /* #ffffff */
-    --text-h2: hsl(300 0% 95%);  /* #f2f2f2 */
-    --text-h3: hsl(300 0% 90%);  /* #e5e5e5 */
-    --text: hsl(300 0% 80%);     /* #cccccc */
+    --bg: hsl(300 0% 4%);           /* #0a0a0a */
+    --bg-light: hsl(0 0% 15%);      /* #262626 */
+    --text-h1: hsl(300 0% 100%);    /* #ffffff */
+    --text-h2: hsl(300 0% 95%);     /* #f2f2f2 */
+    --text-h3: hsl(300 0% 90%);     /* #e5e5e5 */
+    --text: hsl(300 0% 80%);        /* #cccccc */
     --primary: hsl(210, 100%, 72%); /* #70B8FF */
-    --secondary: hsl(29 64% 65%);/* #f2b866 */
-    --border: hsl(0 0% 28%);
+    --secondary: hsl(29 64% 65%);   /* #f2b866 */
+    --border: hsl(0 0% 28%);        /*#474747*/
 
 }
 
