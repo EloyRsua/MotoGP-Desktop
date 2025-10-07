@@ -18,7 +18,6 @@
 --border: #474747;        
 */
 
-
 /*CONTRASTES->COMPROBADOS CON EL CHECKER
 
 h1 sobre bg -> 19,79
@@ -49,57 +48,97 @@ body {
 
 /*Especificidad 001*/
 header {
+    /* Aviso sobre color de primer plano no establecido
+       Hay un color de fondo establecido (#262626) y no hay color de primer plano
+       Permitido->Color heredado de body (color: #cccccc;)
+    */
     background-color: #262626;
     border-radius: 0.8em;
 }
 
 /*Especificidad 001*/
 h2 {
+    /* Aviso sobre color de fondo no establecido
+       Hay un color de primer plano establecido (#f2f2f2) y no hay color de fondo
+       Permitido->Color heredado de section (background-color: #262626;)
+    */
     text-align: center;
     color: #f2f2f2;
 }
 
 /*Especificidad 001*/
 h3 {
+    /* Aviso sobre color de fondo no establecido
+       Hay un color de primer plano establecido (#e5e5e5) y no hay color de fondo
+       Permitido->Color heredado de section,aside (background-color: #262626;)
+    */
     color: #e5e5e5;
 }
 
 /*Especificidad 001*/
-dt{
+dt {
+    /* Aviso sobre color de fondo no establecido
+       Hay un color de primer plano establecido (#ffffff) y no hay color de fondo
+       Permitido->Color heredado de aside (background-color: #262626;)
+    */
     color: #ffffff;
     font-weight: bold;
 }
 
+/*Especificidad 002,002*/
+nav>a,h1>a {
+    /* Aviso sobre color de fondo no establecido
+       Hay un color de primer plano establecido (#70B8FF) y no hay color de fondo
+       Permitido->Color heredado de header,aside,section (background-color: #262626;)
+                 En las migas heredado de body (background-color: #0a0a0a;)
+    */
+    color: #70B8FF;
+    text-decoration-line: none;
+}
 
 /*Especificidad 001*/
-a{
+a {
+    /* Aviso sobre color de fondo no establecido
+       Hay un color de primer plano establecido (#70B8FF) y no hay color de fondo
+       Permitido->Color heredado del contenedor padre
+    */
     color: #70B8FF;
 }
 
-a{
-    text-decoration-line: none;
-}
-.active{
+/*Especificidad 010*/
+.active {
+    /* Aviso sobre color de fondo no establecido
+       Hay un color de primer plano establecido (#f2b866) y no hay color de fondo
+       Permitido->Color heredado de header (background-color: #262626;)
+    */
     font-weight: bolder;
     color: #f2b866;
 }
+
 /*Especificidad 011*/
-a:hover{
+a:hover {
+    /* Aviso sobre color de fondo no establecido
+       Hay un color de primer plano establecido (#f2b866) y no hay color de fondo
+       Permitido->Color heredado de header,aside,section (background-color: #262626;)
+                 En las migas heredado de body (background-color: #0a0a0a;)
+    */
     color: #f2b866;
 }
 
 /*Especificidad 001*/
-section,aside{
+section,aside {
+    /* Aviso sobre color de primer plano no establecido
+       Hay un color de fondo establecido (#262626) y no hay color de primer plano
+       Permitido->Color heredado de body (color: #cccccc;)
+    */
     background-color: #262626;
     border-radius: 0.8em;
 }
-
 
 /*Especificidad 001*/
 table {
     margin: auto;
     border-collapse: collapse;
-
 }
 
 /*Especificidad 002,002*/
@@ -108,4 +147,14 @@ table th, table td {
     vertical-align: middle;
     padding: 0.6em;
     border:  solid #474747;
+}
+
+/*Especificidad 002*/
+body > p {
+  font-size: 0.8em;
+}
+
+/*Especificidad 003*/
+body>p>a {
+    text-decoration: none;
 }

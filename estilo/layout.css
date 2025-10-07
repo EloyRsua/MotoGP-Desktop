@@ -1,0 +1,45 @@
+/*Especificidad 001*/
+nav{
+    display: flex;
+    gap: 0.5em;
+    flex-direction: row;
+}
+
+/*Especificidad 001*/
+header{
+    display: flex;
+    align-items: baseline;
+    gap:1em;
+    flex-direction: row;
+}
+@media (min-width: 320px) and (max-width: 799px) {
+    
+    /*Especificidad 001*/
+    nav{
+        /*
+            Aviso sobre redefinición de flex-direction
+            Permitido-> Uso correcto en media query
+        */
+        flex-direction: column;
+    }
+
+    /*Especificidad 001*/
+    header{
+        /*
+            Aviso sobre redefinición de flex-direction
+            Permitido-> Uso correcto en media query
+        */
+        flex-direction: column;
+    }
+
+    /*Especificidad 001*/
+    body>p{
+        display: none;
+    }
+
+    /*Especificidad 001*/
+    video,audio{
+        width: 100%;
+        height: auto;
+    }
+}
