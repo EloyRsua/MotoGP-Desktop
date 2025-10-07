@@ -4,22 +4,22 @@
 /*https://www.iamsajid.com/ui-colors/*/
 /*0,243*/ 
 
-/* Variables globales */
+/* Colores globales */
 
-:root {
-    --bg: hsl(300 0% 4%);           /* #0a0a0a */
-    --bg-light: hsl(0 0% 15%);      /* #262626 */
-    --text-h1: hsl(300 0% 100%);    /* #ffffff */
-    --text-h2: hsl(300 0% 95%);     /* #f2f2f2 */
-    --text-h3: hsl(300 0% 90%);     /* #e5e5e5 */
-    --text: hsl(300 0% 80%);        /* #cccccc */
-    --primary: hsl(210, 100%, 72%); /* #70B8FF */
-    --secondary: hsl(29 64% 65%);   /* #f2b866 */
-    --border: hsl(0 0% 28%);        /*#474747*/
+/*
+--bg: #0a0a0a;           
+--bg-light: #262626;  
+--text-h1: #ffffff;       
+--text-h2: #f2f2f2;     
+--text-h3: #e5e5e5;     
+--text: #cccccc;        
+--primary: #70B8FF; 
+--secondary: #f2b866;   
+--border: #474747;        
+*/
 
-}
 
-/*CONTRASTES-COMPROBADOS CON EL CHECKER
+/*CONTRASTES->COMPROBADOS CON EL CHECKER
 
 h1 sobre bg -> 19,79
 h2 sobre bg -> 17,68
@@ -43,49 +43,55 @@ secondary sobre bg-light -> 8,52
 /*Especificidad 001*/
 body {
     font-family: Tahoma, sans-serif;
-    background-color: var(--bg);
-    color: var(--text);
+    background-color: #0a0a0a;
+    color: #cccccc;
 }
 
 /*Especificidad 001*/
 header {
-    background-color: var(--bg-light);
-    border-radius: 1em;
+    background-color: #262626;
+    border-radius: 0.8em;
 }
 
 /*Especificidad 001*/
 h2 {
     text-align: center;
-    color: var(--text-h2);
+    color: #f2f2f2;
 }
 
 /*Especificidad 001*/
 h3 {
-    text-align: center;
-    color: var(--text-h3);
+    color: #e5e5e5;
 }
 
 /*Especificidad 001*/
 dt{
-    color: var(--text-h1);
-    
+    color: #ffffff;
+    font-weight: bold;
 }
 
 
 /*Especificidad 001*/
 a{
-    color: var(--primary);
+    color: #70B8FF;
 }
 
+a{
+    text-decoration-line: none;
+}
+.active{
+    font-weight: bolder;
+    color: #f2b866;
+}
 /*Especificidad 011*/
 a:hover{
-    color: var(--secondary);
+    color: #f2b866;
 }
 
 /*Especificidad 001*/
 section,aside{
-    background-color: var(--bg-light);
-    border-radius: 1em;
+    background-color: #262626;
+    border-radius: 0.8em;
 }
 
 
@@ -96,10 +102,10 @@ table {
 
 }
 
-/*Especificidad 002*/
+/*Especificidad 002,002*/
 table th, table td {
     text-align: center;
     vertical-align: middle;
     padding: 0.6em;
-    border:  solid var(--border);
+    border:  solid #474747;
 }

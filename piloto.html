@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MotoGP-Piloto</title>
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css"/>
-      <link rel="icon" href="multimedia/icon.png" type="image/png">
+    <link rel="icon" href="multimedia/icon.png" type="image/png">
 
 </head>
 
@@ -19,22 +19,20 @@
     <header>
         <h1><a href="index.html">MotoGP Desktop</a></h1>
         <nav>
-            <ul>
-                <li> <a href="index.html">Inicio</a> </li>
-                <li> <a href="piloto.html">Piloto</a> </li>
-                <li> <a href="circuito.html">Circuito</a> </li>
-                <li> <a href="meteorologia.html">Meteorología</a> </li>
-                <li> <a href="clasificaciones.html">Clasificaciones</a> </li>
-                <li> <a href="juegos.html">Juegos</a> </li>
-                <li><a href="ayuda.html">Ayuda</a> </li>
-    
-            </ul>
+            <a href="index.html">Inicio</a>
+            <a href="piloto.html" class="active">Piloto</a>
+            <a href="circuito.html">Circuito</a>
+            <a href="meteorologia.html">Meteorología</a>
+            <a href="clasificaciones.html">Clasificaciones</a>
+            <a href="juegos.html">Juegos</a>
+            <a href="ayuda.html">Ayuda</a>
+            
             
         </nav>
     </header>
-    <main>
-        <p><a href="index.html">Inicio</a> &gt;&gt; Piloto</p>
+    <p><a href="index.html">Inicio</a> &gt;&gt; <strong>Piloto</strong></p>
 
+    <main>
         <section>   
             <h2>Enea Bastianini</h2>
             <p>
@@ -113,20 +111,23 @@
             <caption>Estadísticas de Temporada 2024</caption>
             <thead>
                 <tr>
+                    <th scope="col" id="temporada">Temporada</th>
                     <th scope="col" id="puntos">Puntos</th>
                     <th scope="col" id="posicion">Posición Final</th>
                     <th scope="col" id="poles">Poles</th>
                     <th scope="col" id="victorias">Victorias</th>
                     <th scope="col" id="podios">Podios</th>
+
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <th scope="row" id="fila1">Temporada 2024</th>
+                    <th scope="row" id="fila1"> 2024</th>
                     <td headers="fila1 puntos">386</td>
                     <td headers="fila1 posicion">4º</td>
-                    <td headers="fila1 poles">2</td>
+                    <td headers="fila1 poles">1</td>
                     <td headers="fila1 victorias">2</td>
+                    <td headers="fila1 podios">9</td>
 
                 </tr>
             </tbody>
