@@ -38,8 +38,13 @@ header{
     }
 
     /*Especificidad 001*/
-    video,audio{
+    video{
         width: 100%;
         height: auto;
+    }
+    
+    /*Especificidad 001*/
+    audio{
+        width:100%;
     }
 }
