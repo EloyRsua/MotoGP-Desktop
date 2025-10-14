@@ -1,0 +1,57 @@
+<!ELEMENT circuito (
+    nombre,
+    longitudTrazado,
+    anchura,
+    fecha,
+    hora,
+    numero_vueltas,
+    localidad,
+    pais,
+    patrocinador,
+    referencias,
+    galeria_fotografias,
+    galeria_videos,
+    punto_origen,
+    puntos,
+    resultados
+)>
+
+<!-- Datos generales -->
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT longitudTrazado (#PCDATA)>
+<!ATTLIST longitudTrazado unidad CDATA #REQUIRED>
+<!ELEMENT anchura (#PCDATA)>
+<!ATTLIST anchura unidad CDATA #REQUIRED>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT hora (#PCDATA)>
+<!ELEMENT numero_vueltas (#PCDATA)>
+<!ELEMENT localidad (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+<!ELEMENT patrocinador (#PCDATA)>
+
+<!-- Referencias -->
+<!ELEMENT referencias (referencia+)>
+<!ELEMENT referencia (#PCDATA)>
+
+<!-- Galerías -->
+<!ELEMENT galeria_fotografias (fotografia+)>
+<!ELEMENT fotografia (#PCDATA)>
+
+<!ELEMENT galeria_videos (video+)>
+<!ELEMENT video (#PCDATA)>
+
+<!-- Punto origen -->
+<!ELEMENT punto_origen (longitud, latitud, altitud)>
+<!ELEMENT longitud (#PCDATA)>
+<!ELEMENT latitud (#PCDATA)>
+<!ELEMENT altitud (#PCDATA)>
+
+<!-- Puntos del circuito -->
+<!ELEMENT puntos (punto+)>
+<!ELEMENT punto (longitud, latitud, altitud)>
+<!ATTLIST punto sector (1 | 2 | 3) #REQUIRED>
+
+<!-- Resultados -->
+<!ELEMENT resultados (vencedor)>
+<!ELEMENT vencedor (nombre, tiempo)>
+<!ELEMENT tiempo (#PCDATA)>
