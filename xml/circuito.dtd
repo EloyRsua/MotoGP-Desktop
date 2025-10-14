@@ -41,14 +41,14 @@
 <!ELEMENT video (#PCDATA)>
 
 <!-- Punto origen -->
-<!ELEMENT punto_origen (longitud, latitud, altitud)>
-<!ELEMENT longitud (#PCDATA)>
-<!ELEMENT latitud (#PCDATA)>
-<!ELEMENT altitud (#PCDATA)>
+<!ELEMENT punto_origen (longitude, latitude, altitude)>
+<!ELEMENT longitude (#PCDATA)>
+<!ELEMENT latitude (#PCDATA)>
+<!ELEMENT altitude (#PCDATA)>
 
 <!-- Puntos del circuito -->
 <!ELEMENT puntos (punto+)>
-<!ELEMENT punto (longitud, latitud, altitud)>
+<!ELEMENT punto (longitude, latitude, altitude)>
 <!ATTLIST punto sector (1 | 2 | 3) #REQUIRED>
 
 <!-- Resultados -->
