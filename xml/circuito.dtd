@@ -12,11 +12,9 @@
     galeria_fotografias,
     galeria_videos,
     punto_origen,
-    puntos,
-    resultados
+    tramos
 )>
 
-<!-- Datos generales -->
 <!ELEMENT nombre (#PCDATA)>
 <!ELEMENT longitudTrazado (#PCDATA)>
 <!ATTLIST longitudTrazado unidad CDATA #REQUIRED>
@@ -29,29 +27,26 @@
 <!ELEMENT pais (#PCDATA)>
 <!ELEMENT patrocinador (#PCDATA)>
 
-<!-- Referencias -->
 <!ELEMENT referencias (referencia+)>
 <!ELEMENT referencia (#PCDATA)>
 
-<!-- Galerías -->
 <!ELEMENT galeria_fotografias (fotografia+)>
 <!ELEMENT fotografia (#PCDATA)>
 
 <!ELEMENT galeria_videos (video+)>
 <!ELEMENT video (#PCDATA)>
 
-<!-- Punto origen -->
 <!ELEMENT punto_origen (longitude, latitude, altitude)>
 <!ELEMENT longitude (#PCDATA)>
+<!ATTLIST longitude unidades CDATA #REQUIRED>
 <!ELEMENT latitude (#PCDATA)>
+<!ATTLIST latitude unidades CDATA #REQUIRED>
 <!ELEMENT altitude (#PCDATA)>
+<!ATTLIST altitude unidades CDATA #REQUIRED>
 
-<!-- Puntos del circuito -->
-<!ELEMENT puntos (punto+)>
-<!ELEMENT punto (longitude, latitude, altitude)>
-<!ATTLIST punto sector (1 | 2 | 3) #REQUIRED>
-
-<!-- Resultados -->
-<!ELEMENT resultados (vencedor)>
-<!ELEMENT vencedor (nombre, tiempo)>
-<!ELEMENT tiempo (#PCDATA)>
+<!ELEMENT tramos (tramo+)>
+<!ELEMENT tramo (distancia, coordenadas, sector)>
+<!ELEMENT distancia (#PCDATA)>
+<!ATTLIST distancia unidades CDATA #REQUIRED>
+<!ELEMENT coordenadas (longitude, latitude, altitude)>
+<!ELEMENT sector (#PCDATA)>
