@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="480" viewBox="0 0 1200 480">
+<style>
+.axis { stroke: #333; stroke-width:1 }
+.grid { stroke: #ddd; stroke-width:0.8 }
+.profile-fill { fill: rgba(30,144,255,0.25); }
+.profile-stroke { stroke: #1e90ff; stroke-width:2; fill:none }
+.label { font-family: Arial, sans-serif; font-size:12px; fill:#111 }
+</style>
+<text x="600.0" y="28" class="label" text-anchor="middle" font-size="16">Perfil altimétrico - Phillip Island</text>
+<line x1="80" y1="400.0" x2="1160" y2="400.0" class="grid" />
+<text x="70" y="404.0" class="label" text-anchor="end">29.7 m</text>
+<line x1="80" y1="327.99999999999994" x2="1160" y2="327.99999999999994" class="grid" />
+<text x="70" y="331.99999999999994" class="label" text-anchor="end">35.4 m</text>
+<line x1="80" y1="255.99999999999994" x2="1160" y2="255.99999999999994" class="grid" />
+<text x="70" y="259.99999999999994" class="label" text-anchor="end">41.1 m</text>
+<line x1="80" y1="184.0" x2="1160" y2="184.0" class="grid" />
+<text x="70" y="188.0" class="label" text-anchor="end">46.8 m</text>
+<line x1="80" y1="111.99999999999994" x2="1160" y2="111.99999999999994" class="grid" />
+<text x="70" y="115.99999999999994" class="label" text-anchor="end">52.5 m</text>
+<line x1="80" y1="40.0" x2="1160" y2="40.0" class="grid" />
+<text x="70" y="44.0" class="label" text-anchor="end">58.2 m</text>
+<line x1="80.0" y1="40" x2="80.0" y2="400" class="grid" />
+<text x="80.0" y="418" class="label" text-anchor="middle">0.0 m</text>
+<line x1="215.0" y1="40" x2="215.0" y2="400" class="grid" />
+<text x="215.0" y="418" class="label" text-anchor="middle">555.7 m</text>
+<line x1="350.0" y1="40" x2="350.0" y2="400" class="grid" />
+<text x="350.0" y="418" class="label" text-anchor="middle">1.11 km</text>
+<line x1="485.0" y1="40" x2="485.0" y2="400" class="grid" />
+<text x="485.0" y="418" class="label" text-anchor="middle">1.67 km</text>
+<line x1="620.0" y1="40" x2="620.0" y2="400" class="grid" />
+<text x="620.0" y="418" class="label" text-anchor="middle">2.22 km</text>
+<line x1="755.0" y1="40" x2="755.0" y2="400" class="grid" />
+<text x="755.0" y="418" class="label" text-anchor="middle">2.78 km</text>
+<line x1="890.0" y1="40" x2="890.0" y2="400" class="grid" />
+<text x="890.0" y="418" class="label" text-anchor="middle">3.33 km</text>
+<line x1="1025.0" y1="40" x2="1025.0" y2="400" class="grid" />
+<text x="1025.0" y="418" class="label" text-anchor="middle">3.89 km</text>
+<line x1="1160.0" y1="40" x2="1160.0" y2="400" class="grid" />
+<text x="1160.0" y="418" class="label" text-anchor="middle">4.45 km</text>
+<line x1="80" y1="40" x2="80" y2="400" class="axis" />
+<line x1="80" y1="400" x2="1160" y2="400" class="axis" />
+<polygon points="195.95,400 195.95,324.84 222.47,340.72 243.51,333.42 285.92,305.5 307.3,287.9 326.47,287.39 343.03,324.87 362.59,351.55 444.75,382.07 463.43,383.64 476.69,383.64 488.37,373.31 531.73,325.56 539.97,319.2 546.29,317.12 552.02,322.84 575.68,349.57 595.09,369.25 608.64,374.63 621.08,373.25 634.05,368.7 648.48,329.89 678.26,290.34 695.9,263.12 735.64,250.61 756.61,263.56 801.45,169.53 818.02,142.33 833.81,93.15 852.68,56.36 878.89,119.26 885.86,165.54 898.25,165.54 910.03,133.41 925.78,102.92 937.97,112.24 958.25,106.24 988.06,114.88 1012.09,139.54 1024.72,157.37 1033.27,153.27 1041.94,150.25 1059.16,153.18 1160.0,205.78 1160.0,400" class="profile-fill" />
+<polyline points="195.95,400 195.95,324.84 222.47,340.72 243.51,333.42 285.92,305.5 307.3,287.9 326.47,287.39 343.03,324.87 362.59,351.55 444.75,382.07 463.43,383.64 476.69,383.64 488.37,373.31 531.73,325.56 539.97,319.2 546.29,317.12 552.02,322.84 575.68,349.57 595.09,369.25 608.64,374.63 621.08,373.25 634.05,368.7 648.48,329.89 678.26,290.34 695.9,263.12 735.64,250.61 756.61,263.56 801.45,169.53 818.02,142.33 833.81,93.15 852.68,56.36 878.89,119.26 885.86,165.54 898.25,165.54 910.03,133.41 925.78,102.92 937.97,112.24 958.25,106.24 988.06,114.88 1012.09,139.54 1024.72,157.37 1033.27,153.27 1041.94,150.25 1059.16,153.18 1160.0,205.78 1160.0,400" class="profile-stroke" style="fill:none" />
+<polyline points="195.95,324.84 222.47,340.72 243.51,333.42 285.92,305.5 307.3,287.9 326.47,287.39 343.03,324.87 362.59,351.55 444.75,382.07 463.43,383.64 476.69,383.64 488.37,373.31 531.73,325.56 539.97,319.2 546.29,317.12 552.02,322.84 575.68,349.57 595.09,369.25 608.64,374.63 621.08,373.25 634.05,368.7 648.48,329.89 678.26,290.34 695.9,263.12 735.64,250.61 756.61,263.56 801.45,169.53 818.02,142.33 833.81,93.15 852.68,56.36 878.89,119.26 885.86,165.54 898.25,165.54 910.03,133.41 925.78,102.92 937.97,112.24 958.25,106.24 988.06,114.88 1012.09,139.54 1024.72,157.37 1033.27,153.27 1041.94,150.25 1059.16,153.18 1160.0,205.78" class="profile-stroke" />
+<rect x="1000" y="40" width="150" height="48" fill="white" stroke="#999" />
+<text x="1080" y="58" class="label" text-anchor="middle">Altimetría</text>
+<text x="1080" y="76" class="label" text-anchor="middle">(m)</text>
+<text x="80" y="470" class="label" text-anchor="start">Generado por xml2altimetria.py</text>
+</svg>

@@ -1,0 +1,437 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<circuito xmlns="http://www.uniovi.es"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.uniovi.es circuito.xsd">
+
+    <nombre>Phillip Island</nombre>
+    <longitudTrazado unidad="m">4450</longitudTrazado>
+    <anchura unidad="m">13</anchura>
+    <fecha>2025-10-19</fecha>
+    <hora>05:00:00</hora>
+    <numero_vueltas>27</numero_vueltas>
+    <localidad>Phillip Island</localidad>
+    <pais>Australia</pais>
+    <patrocinador>Monster Energy</patrocinador>
+    <referencias>
+        <referencia>https://www.phillipislandcircuit.com.au</referencia>
+        <referencia>https://www.motogp.com/en/racing/2025/AUS</referencia>
+        <referencia>https://en.wikipedia.org/wiki/Phillip_Island_Circuit</referencia>
+    </referencias>
+    <galeria_fotografias>
+        <fotografia>multimedia\circuito.webp</fotografia>
+    </galeria_fotografias>
+    <galeria_videos>
+        <video>multimedia\Circuito.mp4</video>
+    </galeria_videos>
+        <punto_origen>
+        <longitude unidades="grados">145.2321526297699</longitude>
+        <latitude unidades="grados">-38.50261906994832</latitude>
+        <altitude unidades="metros">45.05790957063896</altitude>
+    </punto_origen>
+    <tramos>
+        <tramo>
+            <distancia unidades="metros">477.3</distancia>
+            <coordenadas>
+                <longitude unidades="grados">145.2338812760726</longitude>
+                <latitude unidades="grados">-38.50669359082789</latitude>
+                <altitude unidades="metros">35.65308036831318</altitude>
+            </coordenadas>
+            <sector>1</sector>
+        </tramo>
+        <tramo>
+            <distancia unidades="metros">109.2</distancia>
+            <coordenadas>
+                <longitude unidades="grados">145.2337939206275</longitude>
+                <latitude unidades="grados">-38.50762410711344</latitude>
+                <altitude unidades="metros">34.39908792566116</altitude>
+            </coordenadas>
+            <sector>1</sector>
+        </tramo>
+        <tramo>
+            <distancia unidades="metros">86.6</distancia>
+            <coordenadas>
+                <longitude unidades="grados">145.2331684042947</longitude>
+                <latitude unidades="grados">-38.50826692002941</latitude>
+                <altitude unidades="metros">34.97576254647827</altitude>
+            </coordenadas>
+            <sector>1</sector>
+        </tramo>
+        <tramo>
+            <distancia unidades="metros">174.6</distancia>
+            <coordenadas>
+                <longitude unidades="grados">145.2314774999349</longitude>
+                <latitude unidades="grados">-38.50910886486393</latitude>
+                <altitude unidades="metros">37.18071928917369</altitude>
+            </coordenadas>
+            <sector>1</sector>
+        </tramo>
+        <tramo>
+            <distancia unidades="metros">88.0</distancia>
+            <coordenadas>
+                <longitude unidades="grados">145.2310406492943</longitude>
+                <latitude unidades="grados">-38.50976743573085</latitude>
+                <altitude unidades="metros">38.57159026175528</altitude>
+            </coordenadas>
+            <sector>1</sector>
+        </tramo>
+        <tramo>
+            <distancia unidades="metros">78.9</distancia>
+            <coordenadas>
+                <longitude unidades="grados">145.2314480378175</longitude>
+                <latitude unidades="grados">-38.51044302455271</latitude>
+                <altitude unidades="metros">38.61194878713363</altitude>
+            </coordenadas>
+            <sector>1</sector>
+        </tramo>
+        <tramo>
+            <distancia unidades="metros">68.2</distancia>
+            <coordenadas>
+                <longitude unidades="grados">145.2321566326319</longitude>
+                <latitude unidades="grados">-38.51062543536793</latitude>
+                <altitude unidades="metros">35.65098576491811</altitude>
+            </coordenadas>
+            <sector>1</sector>
+        </tramo>
+        <tramo>
+            <distancia unidades="metros">80.5</distancia>
+            <coordenadas>
+                <longitude unidades="grados">145.2329806793709</longitude>
+                <latitude unidades="grados">-38.51032319894443</latitude>
+                <altitude unidades="metros">33.54308592262198</altitude>
+            </coordenadas>
+            <sector>1</sector>
+        </tramo>
+        <tramo>
+            <distancia unidades="metros">338.2</distancia>
+            <coordenadas>
+                <longitude unidades="grados">145.2355142003488</longitude>
+                <latitude unidades="grados">-38.5079989394083</latitude>
+                <altitude unidades="metros">31.13263036662314</altitude>
+            </coordenadas>
+            <sector>1</sector>
+        </tramo>
+        <tramo>
+            <distancia unidades="metros">76.9</distancia>
+            <coordenadas>
+                <longitude unidades="grados">145.2357816447576</longitude>
+                <latitude unidades="grados">-38.50734607007031</latitude>
+                <altitude unidades="metros">31.0088434527333</altitude>
+            </coordenadas>
+            <sector>1</sector>
+        </tramo>
+        <tramo>
+            <distancia unidades="metros">54.6</distancia>
+            <coordenadas>
+                <longitude unidades="grados">145.2358003548748</longitude>
+                <latitude unidades="grados">-38.50693969981301</latitude>
+                <altitude unidades="metros">31.00884759199451</altitude>
+            </coordenadas>
+            <sector>1</sector>
+        </tramo>
+        <tramo>
+            <distancia unidades="metros">48.1</distancia>
+            <coordenadas>
+                <longitude unidades="grados">145.2357550776235</longitude>
+                <latitude unidades="grados">-38.50651179672852</latitude>
+                <altitude unidades="metros">31.82449851919382</altitude>
+            </coordenadas>
+            <sector>1</sector>
+        </tramo>
+        <tramo>
+            <distancia unidades="metros">178.5</distancia>
+            <coordenadas>
+                <longitude unidades="grados">145.2353348609492</longitude>
+                <latitude unidades="grados">-38.50495491753621</latitude>
+                <altitude unidades="metros">35.59635080595365</altitude>
+            </coordenadas>
+            <sector>1</sector>
+        </tramo>
+        <tramo>
+            <distancia unidades="metros">33.9</distancia>
+            <coordenadas>
+                <longitude unidades="grados">145.2353527298442</longitude>
+                <latitude unidades="grados">-38.50465931399378</latitude>
+                <altitude unidades="metros">36.09923424700927</altitude>
+            </coordenadas>
+            <sector>1</sector>
+        </tramo>
+        <tramo>
+            <distancia unidades="metros">26.0</distancia>
+            <coordenadas>
+                <longitude unidades="grados">145.2356093564542</longitude>
+                <latitude unidades="grados">-38.50451346267821</latitude>
+                <altitude unidades="metros">36.26307287308886</altitude>
+            </coordenadas>
+            <sector>1</sector>
+        </tramo>
+        <tramo>
+            <distancia unidades="metros">23.6</distancia>
+            <coordenadas>
+                <longitude unidades="grados">145.2358734205023</longitude>
+                <latitude unidades="grados">-38.50458469774445</latitude>
+                <altitude unidades="metros">35.81114428787318</altitude>
+            </coordenadas>
+            <sector>2</sector>
+        </tramo>
+        <tramo>
+            <distancia unidades="metros">97.4</distancia>
+            <coordenadas>
+                <longitude unidades="grados">145.2365217822015</longitude>
+                <latitude unidades="grados">-38.50532149978971</latitude>
+                <altitude unidades="metros">33.69977756957633</altitude>
+            </coordenadas>
+            <sector>2</sector>
+        </tramo>
+        <tramo>
+            <distancia unidades="metros">79.9</distancia>
+            <coordenadas>
+                <longitude unidades="grados">145.2368289932526</longitude>
+                <latitude unidades="grados">-38.5060105842094</latitude>
+                <altitude unidades="metros">32.14558810459434</altitude>
+            </coordenadas>
+            <sector>2</sector>
+        </tramo>
+        <tramo>
+            <distancia unidades="metros">55.8</distancia>
+            <coordenadas>
+                <longitude unidades="grados">145.2371749949018</longitude>
+                <latitude unidades="grados">-38.50635388745177</latitude>
+                <altitude unidades="metros">31.72004431056195</altitude>
+            </coordenadas>
+            <sector>2</sector>
+        </tramo>
+        <tramo>
+            <distancia unidades="metros">51.2</distancia>
+            <coordenadas>
+                <longitude unidades="grados">145.2376780544403</longitude>
+                <latitude unidades="grados">-38.50642136228009</latitude>
+                <altitude unidades="metros">31.82915235027464</altitude>
+            </coordenadas>
+            <sector>2</sector>
+        </tramo>
+        <tramo>
+            <distancia unidades="metros">53.4</distancia>
+            <coordenadas>
+                <longitude unidades="grados">145.2380956967104</longitude>
+                <latitude unidades="grados">-38.506123064083</latitude>
+                <altitude unidades="metros">32.18910307835815</altitude>
+            </coordenadas>
+            <sector>2</sector>
+        </tramo>
+        <tramo>
+            <distancia unidades="metros">59.4</distancia>
+            <coordenadas>
+                <longitude unidades="grados">145.2381930921028</longitude>
+                <latitude unidades="grados">-38.50556443751536</latitude>
+                <altitude unidades="metros">35.25436235805326</altitude>
+            </coordenadas>
+            <sector>2</sector>
+        </tramo>
+        <tramo>
+            <distancia unidades="metros">122.6</distancia>
+            <coordenadas>
+                <longitude unidades="grados">145.2381528732412</longitude>
+                <latitude unidades="grados">-38.50445602687832</latitude>
+                <altitude unidades="metros">38.37838630904993</altitude>
+            </coordenadas>
+            <sector>2</sector>
+        </tramo>
+        <tramo>
+            <distancia unidades="metros">72.6</distancia>
+            <coordenadas>
+                <longitude unidades="grados">145.237882332877</longitude>
+                <latitude unidades="grados">-38.50382175992042</latitude>
+                <altitude unidades="metros">40.52885688832873</altitude>
+            </coordenadas>
+            <sector>2</sector>
+        </tramo>
+        <tramo>
+            <distancia unidades="metros">163.6</distancia>
+            <coordenadas>
+                <longitude unidades="grados">145.2372016677771</longitude>
+                <latitude unidades="grados">-38.50247662727114</latitude>
+                <altitude unidades="metros">41.51734101095644</altitude>
+            </coordenadas>
+            <sector>2</sector>
+        </tramo>
+        <tramo>
+            <distancia unidades="metros">86.3</distancia>
+            <coordenadas>
+                <longitude unidades="grados">145.2373600706013</longitude>
+                <latitude unidades="grados">-38.50169901935052</latitude>
+                <altitude unidades="metros">40.49433903311014</altitude>
+            </coordenadas>
+            <sector>2</sector>
+        </tramo>
+        <tramo>
+            <distancia unidades="metros">184.6</distancia>
+            <coordenadas>
+                <longitude unidades="grados">145.2380872411807</longitude>
+                <latitude unidades="grados">-38.50014758416148</latitude>
+                <altitude unidades="metros">47.92143836328788</altitude>
+            </coordenadas>
+            <sector>2</sector>
+        </tramo>
+        <tramo>
+            <distancia unidades="metros">68.2</distancia>
+            <coordenadas>
+                <longitude unidades="grados">145.2379645090586</longitude>
+                <latitude unidades="grados">-38.49954572898641</latitude>
+                <altitude unidades="metros">50.07011339159909</altitude>
+            </coordenadas>
+            <sector>2</sector>
+        </tramo>
+        <tramo>
+            <distancia unidades="metros">65.0</distancia>
+            <coordenadas>
+                <longitude unidades="grados">145.2374874582799</longitude>
+                <latitude unidades="grados">-38.4990905923581</latitude>
+                <altitude unidades="metros">53.95498093592325</altitude>
+            </coordenadas>
+            <sector>2</sector>
+        </tramo>
+        <tramo>
+            <distancia unidades="metros">77.7</distancia>
+            <coordenadas>
+                <longitude unidades="grados">145.2366429920657</longitude>
+                <latitude unidades="grados">-38.49888523997971</latitude>
+                <altitude unidades="metros">56.86110131747224</altitude>
+            </coordenadas>
+            <sector>3</sector>
+        </tramo>
+        <tramo>
+            <distancia unidades="metros">107.9</distancia>
+            <coordenadas>
+                <longitude unidades="grados">145.2354049969079</longitude>
+                <latitude unidades="grados">-38.49904584294626</latitude>
+                <altitude unidades="metros">51.89311450227547</altitude>
+            </coordenadas>
+            <sector>3</sector>
+        </tramo>
+        
+        <tramo>
+            <distancia unidades="metros">28.7</distancia>
+            <coordenadas>
+                <longitude unidades="grados">145.2348711463266</longitude>
+                <latitude unidades="grados">-38.49911918628739</latitude>
+                <altitude unidades="metros">48.23685126598563</altitude>
+            </coordenadas>
+            <sector>3</sector>
+        </tramo>
+        <tramo>
+            <distancia unidades="metros">51.0</distancia>
+            <coordenadas>
+                <longitude unidades="grados">145.2346476254782</longitude>
+                <latitude unidades="grados">-38.4989737188778</latitude>
+                <altitude unidades="metros">48.23686069744651</altitude>
+            </coordenadas>
+            <sector>3</sector>
+        </tramo>
+        <tramo>
+            <distancia unidades="metros">48.5</distancia>
+            <coordenadas>
+                <longitude unidades="grados">145.2348403030758</longitude>
+                <latitude unidades="grados">-38.49855552876631</latitude>
+                <altitude unidades="metros">50.77505477968288</altitude>
+            </coordenadas>
+            <sector>3</sector>
+        </tramo>
+        <tramo>
+            <distancia unidades="metros">64.8</distancia>
+            <coordenadas>
+                <longitude unidades="grados">145.2350645393322</longitude>
+                <latitude unidades="grados">-38.49799429012762</latitude>
+                <altitude unidades="metros">53.18353418221169</altitude>
+            </coordenadas>
+            <sector>3</sector>
+        </tramo>
+        <tramo>
+            <distancia unidades="metros">50.2</distancia>
+            <coordenadas>
+                <longitude unidades="grados">145.2348172722392</longitude>
+                <latitude unidades="grados">-38.49754246617987</latitude>
+                <altitude unidades="metros">52.44738467718059</altitude>
+            </coordenadas>
+            <sector>3</sector>
+        </tramo>
+        <tramo>
+            <distancia unidades="metros">83.5</distancia>
+            <coordenadas>
+                <longitude unidades="grados">145.2339319375592</longitude>
+                <latitude unidades="grados">-38.49725124896118</latitude>
+                <altitude unidades="metros">52.92116347594408</altitude>
+            </coordenadas>
+            <sector>3</sector>
+        </tramo>
+        <tramo>
+            <distancia unidades="metros">122.7</distancia>
+            <coordenadas>
+                <longitude unidades="grados">145.2325253887238</longitude>
+                <latitude unidades="grados">-38.49725797611517</latitude>
+                <altitude unidades="metros">52.23884909899015</altitude>
+            </coordenadas>
+            <sector>3</sector>
+        </tramo>
+        <tramo>
+            <distancia unidades="metros">98.9</distancia>
+            <coordenadas>
+                <longitude unidades="grados">145.2314466857299</longitude>
+                <latitude unidades="grados">-38.49753830579458</latitude>
+                <altitude unidades="metros">50.29068270468369</altitude>
+            </coordenadas>
+            <sector>3</sector>
+        </tramo>
+        <tramo>
+            <distancia unidades="metros">52.0</distancia>
+            <coordenadas>
+                <longitude unidades="grados">145.2310211036571</longitude>
+                <latitude unidades="grados">-38.4978505665887</latitude>
+                <altitude unidades="metros">48.88260360380946</altitude>
+            </coordenadas>
+            <sector>3</sector>
+        </tramo>
+        <tramo>
+            <distancia unidades="metros">35.2</distancia>
+            <coordenadas>
+                <longitude unidades="grados">145.2308135487108</longitude>
+                <latitude unidades="grados">-38.49812055881525</latitude>
+                <altitude unidades="metros">49.20605847284426</altitude>
+            </coordenadas>
+            <sector>3</sector>
+        </tramo>
+        <tramo>
+            <distancia unidades="metros">35.7</distancia>
+            <coordenadas>
+                <longitude unidades="grados">145.2306980048766</longitude>
+                <latitude unidades="grados">-38.4984151281453</latitude>
+                <altitude unidades="metros">49.44503857755741</altitude>
+            </coordenadas>
+            <sector>3</sector>
+        </tramo>
+        <tramo>
+            <distancia unidades="metros">70.9</distancia>
+            <coordenadas>
+                <longitude unidades="grados">145.230696994365</longitude>
+                <latitude unidades="grados">-38.49903337603403</latitude>
+                <altitude unidades="metros">49.21313426827674</altitude>
+            </coordenadas>
+            <sector>3</sector>
+        </tramo>
+        <tramo>
+            <distancia unidades="metros">415.1</distancia>
+            <coordenadas>
+                <longitude unidades="grados">145.2321526297699</longitude>
+                <latitude unidades="grados">-38.50261906994832</latitude>
+                <altitude unidades="metros">45.05790957063896</altitude>
+            </coordenadas>
+            <sector>3</sector>
+        </tramo>
+    </tramos>
+    <vencedor>Raúl Fernández</vencedor>
+    <clasificacion> 
+        <piloto pos="1">Marc Márquez</piloto>
+        <piloto pos="2">Alex Márquez</piloto>
+        <piloto pos="3">Marco Bezzecchi</piloto>
+    </clasificacion>
+</circuito>
