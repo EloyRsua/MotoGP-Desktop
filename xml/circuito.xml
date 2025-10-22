@@ -425,5 +425,10 @@
             <sector>3</sector>
         </tramo>
     </tramos>
-
+    <vencedor>Raúl Fernández</vencedor>
+    <clasificacion> 
+        <piloto pos="1">Marc Márquez</piloto>
+        <piloto pos="2">Alex Márquez</piloto>
+        <piloto pos="3">Marco Bezzecchi</piloto>
+    </clasificacion>
 </circuito>

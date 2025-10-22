@@ -1,25 +1,10 @@
-<!ELEMENT circuito (
-    nombre,
-    longitudTrazado,
-    anchura,
-    fecha,
-    hora,
-    numero_vueltas,
-    localidad,
-    pais,
-    patrocinador,
-    referencias,
-    galeria_fotografias,
-    galeria_videos,
-    punto_origen,
-    tramos
-)>
+<!ELEMENT circuito (nombre, longitudTrazado, anchura, fecha, hora, numero_vueltas, localidad, pais, patrocinador, referencias, galeria_fotografias, galeria_videos, punto_origen, tramos, vencedor, clasificacion)>
 
 <!ELEMENT nombre (#PCDATA)>
 <!ELEMENT longitudTrazado (#PCDATA)>
-<!ATTLIST longitudTrazado unidad CDATA #REQUIRED>
+    <!ATTLIST longitudTrazado unidad CDATA #REQUIRED>
 <!ELEMENT anchura (#PCDATA)>
-<!ATTLIST anchura unidad CDATA #REQUIRED>
+    <!ATTLIST anchura unidad CDATA #REQUIRED>
 <!ELEMENT fecha (#PCDATA)>
 <!ELEMENT hora (#PCDATA)>
 <!ELEMENT numero_vueltas (#PCDATA)>
@@ -37,16 +22,22 @@
 <!ELEMENT video (#PCDATA)>
 
 <!ELEMENT punto_origen (longitude, latitude, altitude)>
-<!ELEMENT longitude (#PCDATA)>
-<!ATTLIST longitude unidades CDATA #REQUIRED>
-<!ELEMENT latitude (#PCDATA)>
-<!ATTLIST latitude unidades CDATA #REQUIRED>
-<!ELEMENT altitude (#PCDATA)>
-<!ATTLIST altitude unidades CDATA #REQUIRED>
+    <!ELEMENT longitude (#PCDATA)>
+        <!ATTLIST longitude unidades CDATA #REQUIRED>
+    <!ELEMENT latitude (#PCDATA)>
+        <!ATTLIST latitude unidades CDATA #REQUIRED>
+    <!ELEMENT altitude (#PCDATA)>
+        <!ATTLIST altitude unidades CDATA #REQUIRED>
 
 <!ELEMENT tramos (tramo+)>
 <!ELEMENT tramo (distancia, coordenadas, sector)>
-<!ELEMENT distancia (#PCDATA)>
-<!ATTLIST distancia unidades CDATA #REQUIRED>
-<!ELEMENT coordenadas (longitude, latitude, altitude)>
-<!ELEMENT sector (#PCDATA)>
+    <!ELEMENT distancia (#PCDATA)>
+        <!ATTLIST distancia unidades CDATA #REQUIRED>
+    <!ELEMENT coordenadas (longitude, latitude, altitude)>
+    <!ELEMENT sector (#PCDATA)>
+
+<!ELEMENT vencedor (#PCDATA)>
+
+<!ELEMENT clasificacion (piloto+)>
+<!ELEMENT piloto (#PCDATA)>
+    <!ATTLIST piloto pos CDATA #REQUIRED>
