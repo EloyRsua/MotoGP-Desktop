@@ -1,0 +1,106 @@
+
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+<head>
+    <!-- Datos que describen el documento -->
+    <!-- TODO completar toda la información del documento-->
+    <meta charset="UTF-8" />
+    <meta name="author" content="Eloy Rubio Suárez" />
+    <meta name="description" content="TODO" />
+    <meta name="keywords" content="motos,motor,deporte,inicio,carrera,gran premio,mundial,2025, TODO completar" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotoGP-Juegos</title>
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout-cards.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/cards.css" />
+
+    <link rel="icon" href="multimedia/icon.png" type="image/png">
+</head>
+
+<body>
+        <!-- Datos con el contenidos que aparece en el navegador -->
+    <header>
+        <h1><a href="index.html">MotoGP Desktop</a></h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="piloto.html" >Piloto</a>
+            <a href="circuito.html">Circuito</a>
+            <a href="meteorologia.html">Meteorología</a>
+            <a href="clasificaciones.html">Clasificaciones</a>
+            <a href="juegos.html" class="active">Juegos</a>
+            <a href="ayuda.html">Ayuda</a>
+
+
+        </nav>
+    </header>
+    <p><a href="index.html">Inicio</a> &gt;&gt;<a href="juegos.html">Juegos</a> &gt;&gt; <strong>Memoria</strong></p>
+    
+
+    <main>
+        <h2>Juego de memoria con cartas</h2>
+        <article onclick="memoria.voltearCarta(this)">
+            <h3>Memory Card</h3>
+            <img src="multimedia/logos/honda.svg" alt="Logo-Honda">
+        </article>
+        <article onclick="memoria.voltearCarta(this)">
+            <h3>Memory Card</h3>
+            <img src="multimedia/logos/honda.svg" alt="Logo-Honda">
+        </article>
+
+        <article onclick="memoria.voltearCarta(this)">
+            <h3>Memory Card</h3>
+            <img src="multimedia/logos/yamaha.svg" alt="Logo-Yamaha">
+        </article>
+        <article onclick="memoria.voltearCarta(this)">
+            <h3>Memory Card</h3>
+            <img src="multimedia/logos/yamaha.svg" alt="Logo-Yamaha">
+        </article>
+
+        <article onclick="memoria.voltearCarta(this)">
+            <h3>Memory Card</h3>
+            <img src="multimedia/logos/ducati.svg" alt="Logo-Ducati">
+        </article>
+        <article onclick="memoria.voltearCarta(this)">
+            <h3>Memory Card</h3>
+            <img src="multimedia/logos/ducati.svg" alt="Logo-Ducati">
+        </article>
+
+        <article onclick="memoria.voltearCarta(this)">
+            <h3>Memory Card</h3>
+            <img src="multimedia/logos/ktm.svg" alt="Logo-KTM">
+        </article>
+        <article onclick="memoria.voltearCarta(this)">
+            <h3>Memory Card</h3>
+            <img src="multimedia/logos/ktm.svg" alt="Logo-KTM">
+        </article>
+
+        <article onclick="memoria.voltearCarta(this)">
+            <h3>Memory Card</h3>
+            <img src="multimedia/logos/aprilia.svg" alt="Logo-Aprilia">
+        </article>
+        <article onclick="memoria.voltearCarta(this)">
+            <h3>Memory Card</h3>
+            <img src="multimedia/logos/aprilia.svg" alt="Logo-Aprilia">
+        </article>
+
+        <article onclick="memoria.voltearCarta(this)">
+            <h3>Memory Card</h3>
+            <img src="multimedia/logos/motogp.svg" alt="Logo-MotoGP">
+        </article>
+        <article onclick="memoria.voltearCarta(this)">
+            <h3>Memory Card</h3>
+            <img src="multimedia/logos/motogp.svg" alt="Logo-MotoGP">
+        </article>
+    </main>
+
+<script src="js/memoria.js"></script>
+<script>
+    var memoria = new Memoria();
+</script>
+
+</body>
+
+</html>

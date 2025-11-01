@@ -106,5 +106,5 @@ def extraer_alturas_y_generar_svg(archivoXML):
 
 # --- Uso del script ---
 if __name__ == "__main__":
-    archivoXML = r"C:\Users\Eloy\Desktop\SEW\MotoGP-Desktop\xml\circuitoEsquema.xml"
+    archivoXML = r"C:\xampp\htdocs\MotoGP-Desktop\xml\circuitoEsquema.xml"
     extraer_alturas_y_generar_svg(archivoXML)
