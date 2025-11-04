@@ -13,6 +13,7 @@
     <title>MotoGP-Juegos</title>
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+
     <link rel="icon" href="multimedia/icon.png" type="image/png">
 </head>
 
@@ -32,18 +33,21 @@
 
         </nav>
     </header>
-    <p><a href="index.html">Inicio</a> &gt;&gt; <strong>Juegos</strong></p>
+    <p><a href="index.html">Inicio</a> &gt;&gt;<a href="juegos.html">Juegos</a> &gt;&gt; <strong>Cronómetro</strong></p>
+
+
     <main>
-        <h2>Juegos de MotoGP-Desktop</h2>
-        <section>
-            <h3>Lista de Juegos</h3>
-            <ul>    
-                <li><a href="memoria.html">Juego de memoria con cartas</a></li>
-                <li><a href="cronometro.html">Cronómetro</a></li>
+        <h2>Cronómetro</h2>
+        <p>00:00.0</p>
 
-            </ul>
+        <button onclick="cronometro.arrancar()">Arrancar</button>
+        <button onclick="cronometro.parar()">Parar</button>
+        <button onclick="cronometro.reiniciar()">Reiniciar</button>
     </main>
-
+    <script src="js/cronometro.js"></script>
+    <script>
+        const cronometro = new Cronometro();
+    </script>
 
 </body>
 

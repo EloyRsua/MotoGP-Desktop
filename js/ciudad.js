@@ -38,7 +38,6 @@ class Ciudad {
     }
 
     // Método que escribe en el documento la información de las coordenadas
-    //PREGUNTAR A JAIME SI HAY QUE USAR DOCUMENT.WRITE INCLUSO SI ES MALA PRACTICA
     escribirCoordenadas() {
         const seccion = document.currentScript.parentElement;
 
