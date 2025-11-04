@@ -15,9 +15,10 @@ main article {
     box-shadow: 0.1em 0.1em 0.1em rgba(0,0,0,.3);
 }
 
-/* Regla con la transformación que permite girar la carta cuando se le pone el atributo personalizado data-estado al valor volteada */
+/* Regla con la transformación que permite girar la carta cuando se le pone el atributo personalizado data-estado al valor volteada O revelada */
 /* especificidad: 012 */
-main article[data-estado=volteada] {
+article[data-estado="volteada"],
+article[data-estado="revelada"]{
     transform: rotateY(180deg);
 }
 
