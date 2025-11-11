@@ -59,7 +59,7 @@ class Cronometro {
             String(segundos).padStart(2, '0') + '.' +
             String(decimas);
 
-        const parrafo = document.querySelector('main p');
+        const parrafo = document.querySelector('section p');
         if (parrafo) parrafo.textContent = formato;
     }
 

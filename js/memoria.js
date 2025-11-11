@@ -1,10 +1,15 @@
 class Memoria {
 
     constructor() {
-        this.barajarCartas();
         this.tablero_bloqueado = false;
         this.primera_carta = null;
         this.segunda_carta = null;
+        
+        this.barajarCartas();
+        
+        // Crear instancia del cronómetro
+        this.cronometro = new Cronometro();
+        this.cronometro.arrancar();
     }
 
     voltearCarta(carta) {
@@ -21,7 +26,6 @@ class Memoria {
         this.segunda_carta = carta;
         this.tablero_bloqueado = true;
         
-        // Esperamos a que se vea la segunda carta antes de comprobar
         setTimeout(() => this.comprobarPareja(), 400);
     }
 
@@ -67,7 +71,8 @@ class Memoria {
         );
 
         if (todasReveladas) {
-            alert("Has encontrado todas las parejas. Fin del juego.");
+            // Parar el cronómetro cuando el juego termina
+            this.cronometro.parar();
         }
     }
 
