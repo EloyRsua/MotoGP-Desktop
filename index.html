@@ -6,16 +6,18 @@
     <!-- Datos que describen el documento -->
     <meta charset="UTF-8" />
     <meta name="author" content="Eloy Rubio Suárez" />
-    <meta name="description" content="Página de inicio de la web de 
-        MotoGP desarrollada durante las clases de SEW" />
-    <meta name="keywords" content="motos,motor,deporte,inicio,carrera,gran premio,noticia,fotos" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>MotoGP</title>
+    <meta name="description" content="Página de inicio de MotoGP Desktop con carrusel de imágenes y noticias" />
+    <meta name="keywords" content="motos,motor,deporte,inicio,carrera,gran premio,mundial,2025,noticias,imagenes,carrusel" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MotoGP Desktop - Inicio</title>
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
-
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="icon" href="multimedia/icon.png" type="image/png" />
+    
+    <!-- jQuery Core 3.7.1 minificado -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+            crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -24,27 +26,34 @@
 
     <header>
         <nav>
-            <a href="index.html" class="active">Inicio</a>
+            <a href="index.html">Inicio</a>
             <a href="piloto.html">Piloto</a>
             <a href="circuito.html">Circuito</a>
             <a href="meteorologia.html">Meteorología</a>
             <a href="clasificaciones.html">Clasificaciones</a>
             <a href="juegos.html">Juegos</a>
             <a href="ayuda.html">Ayuda</a>
-
         </nav>
-
     </header>
-    <main>
 
+    <main>
+        <!-- Aquí se insertará dinámicamente el carrusel de imágenes -->
+        
+        <!-- Aquí se insertarán dinámicamente las noticias -->
     </main>
+
+    <!-- Scripts al final del body -->
     <script src="js/carrusel.js"></script>
     <script src="js/noticias.js"></script>
     <script>
+        // Crear instancia del carrusel
+        const carrusel = new Carrusel("Phillip Island Circuit");
+        carrusel.getFotografias();
+        
+        // Crear instancia de noticias
         const noticias = new Noticias();
         noticias.buscar();
     </script>
-
 </body>
 
 </html>
