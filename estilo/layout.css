@@ -48,3 +48,11 @@ header{
         width:100%;
     }
 }
+
+/* Especificidad: 0,0,2 - Adaptabilidad del carrusel para móviles */
+@media (max-width: 768px) {
+    article h2 + img {
+        width: 100%;
+        height: auto;
+    }
+}

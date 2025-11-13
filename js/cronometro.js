@@ -1,66 +1,67 @@
 class Cronometro {
 
-    //Se debe mostrar en pantalla el tiempo transcurrido en minutos segundos y decimas de segundo
-    constructor() {
-        this.tiempo = 0;
-        this.inicio = 0;
-    }
+    // Atributos privados
+    #tiempo = 0;
+    #inicio = 0;
+    #corriendo = null;
 
+    constructor() {}
+
+    // Método público: arrancar cronómetro
     arrancar() {
-        if (this.corriendo) return; // ya está corriendo
+        if (this.#corriendo) return; // ya está corriendo
 
-        try {
-            const ahora = Temporal.Now.instant();
-            this.inicio = Temporal.Instant.fromEpochMilliseconds(ahora.epochMilliseconds - this.tiempo);
-        } catch (error) {
-            const ahora = new Date();
-            this.inicio = new Date(ahora.getTime() - this.tiempo);
-        }
-
-        this.corriendo = setInterval(this.actualizar.bind(this), 100);
+        this.#inicio = Date.now() - this.#tiempo;
+        this.#corriendo = setInterval(() => this.#actualizar(), 100);
     }
 
-
-    //Llamar actualizar cada decima de segundo
-    actualizar() {
-        let ahora;
-        try {
-            const diferencia = Temporal.Now.instant().epochMilliseconds - this.inicio.epochMilliseconds;
-            this.tiempo = diferencia;
-        } catch (error) {
-            ahora = new Date();
-            this.tiempo = ahora.getTime() - this.inicio.getTime();
-        }
-
-        this.mostrar();
-    }
+    // Método público: parar cronómetro
     parar() {
-        if (this.corriendo) {
-            clearInterval(this.corriendo);
-            this.corriendo = false;
+        if (this.#corriendo) {
+            clearInterval(this.#corriendo);
+            this.#corriendo = null;
         }
     }
+
+    // Método público: reiniciar cronómetro
     reiniciar() {
         this.parar();
-        this.tiempo = 0;
-        this.inicio = 0;
-        this.mostrar();
-
+        this.#tiempo = 0;
+        this.#inicio = 0;
+        this.#mostrar();
     }
-    //Muestra 00:00.0
-    mostrar() {
-        const minutos = parseInt(this.tiempo / 60000);
-        const segundos = parseInt((this.tiempo % 60000) / 1000);
-        const decimas = parseInt((this.tiempo % 1000) / 100);
 
-        // Formateamos con ceros a la izquierda
+    // Método privado: actualizar tiempo
+    #actualizar() {
+        this.#tiempo = Date.now() - this.#inicio;
+        this.#mostrar();
+    }
+
+    // Método privado: mostrar tiempo en pantalla
+    #mostrar() {
+        const minutos = Math.floor(this.#tiempo / 60000);
+        const segundos = Math.floor((this.#tiempo % 60000) / 1000);
+        const decimas = Math.floor((this.#tiempo % 1000) / 100);
+
         const formato =
             String(minutos).padStart(2, '0') + ':' +
             String(segundos).padStart(2, '0') + '.' +
-            String(decimas);
+            decimas;
 
         const parrafo = document.querySelector('section p');
         if (parrafo) parrafo.textContent = formato;
     }
 
+    
 }
+
+const cronometro = new Cronometro();
+
+// Seleccionamos todos los botones dentro de main
+const botones = document.querySelectorAll('main section button');
+
+// Asignamos los listeners según el orden de los botones
+botones[0].addEventListener('click', () => cronometro.arrancar());
+botones[1].addEventListener('click', () => cronometro.parar());
+botones[2].addEventListener('click', () => cronometro.reiniciar());
+
