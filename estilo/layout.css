@@ -1,21 +1,22 @@
 /*Especificidad 001*/
-nav{
+nav {
     display: flex;
     gap: 0.5em;
     flex-direction: row;
 }
 
 /*Especificidad 001*/
-header{
+header {
     display: flex;
     align-items: baseline;
-    gap:1em;
+    gap: 1em;
     flex-direction: row;
 }
+
 @media (min-width: 320px) and (max-width: 799px) {
-    
+
     /*Especificidad 001*/
-    nav{
+    nav {
         /*
             Aviso sobre redefinición de flex-direction
             Permitido-> Uso correcto en media query
@@ -24,7 +25,7 @@ header{
     }
 
     /*Especificidad 001*/
-    header{
+    header {
         /*
             Aviso sobre redefinición de flex-direction
             Permitido-> Uso correcto en media query
@@ -33,26 +34,58 @@ header{
     }
 
     /*Especificidad 001*/
-    body>p{
+    body>p {
         display: none;
     }
 
     /*Especificidad 001*/
-    video{
+    video {
         width: 100%;
         height: auto;
     }
-    
+
     /*Especificidad 001*/
-    audio{
-        width:100%;
+    audio {
+        width: 100%;
     }
 }
 
-/* Especificidad: 0,0,2 - Adaptabilidad del carrusel para móviles */
+/* Especificidad: 0,0,0,2 - Selector de tipo body > div */
+body>div {
+    width: 80%;
+    height: 10%;
+    margin: 2em auto;
+    border: 0.2em solid #333;
+    border-radius: 0.5em;
+}
+
+/* Estilos para el SVG de altimetría */
+/* Especificidad: 0,0,0,1 - Selector de tipo svg */
+svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1em auto;
+}
+
 @media (max-width: 768px) {
-    article h2 + img {
+
+    /* Especificidad: 0,0,0,2 - Selector de tipo main section */
+    /* Redefine: padding, margin */
+    main section {
+        padding: 1em;
+        margin: 1em 0;
+    }
+    /* Especificidad: 0,0,2 - Adaptabilidad del carrusel para móviles */
+    article h2+img {
         width: 100%;
         height: auto;
+    }
+    /* Especificidad: 0,0,0,2 - Selector de tipo body > div */
+    body>div {
+        width: 100%;
+        height: 400px;
+        margin: 1em 0;
+        border-radius: 0;
     }
 }

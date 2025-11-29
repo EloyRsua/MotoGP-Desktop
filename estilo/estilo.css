@@ -133,6 +133,8 @@ section,aside {
     */
     background-color: #262626;
     border-radius: 0.8em;
+    border: 0.1em solid #ddd;
+
 }
 
 /*Especificidad 001*/

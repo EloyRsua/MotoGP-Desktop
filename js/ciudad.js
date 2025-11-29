@@ -89,50 +89,31 @@ class Ciudad {
         const article = $("<article></article>");
         article.append("<h4>Meteorología del día de la carrera</h4>");
 
-        // Información diaria (sunrise/sunset)
-        const pSunrise = $("<p></p>").text(`Amanecer: ${daily.sunrise[0]}`);
-        const pSunset = $("<p></p>").text(`Puesta de sol: ${daily.sunset[0]}`);
+        // Información diaria (sunrise/sunset) - Formatear horas
+        const amanecer = daily.sunrise[0].split('T')[1];
+        const atardecer = daily.sunset[0].split('T')[1];
+        const pSunrise = $("<p></p>").text("Amanecer: " + amanecer);
+        const pSunset = $("<p></p>").text("Puesta de sol: " + atardecer);
         article.append(pSunrise);
         article.append(pSunset);
 
-        // Crear tabla con datos horarios
-        const table = $("<table></table>");
-        const thead = $("<thead></thead>");
-        const headerRow = $("<tr></tr>");
-        
-        headerRow.append("<th>Hora</th>");
-        headerRow.append("<th>Temperatura (°C)</th>");
-        headerRow.append("<th>Sensación térmica (°C)</th>");
-        headerRow.append("<th>Lluvia (mm)</th>");
-        headerRow.append("<th>Humedad (%)</th>");
-        headerRow.append("<th>Velocidad viento (km/h)</th>");
-        headerRow.append("<th>Dirección viento (°)</th>");
-        
-        thead.append(headerRow);
-        table.append(thead);
-
-        const tbody = $("<tbody></tbody>");
-
-        // Recorrer datos horarios
+        // Recorrer datos horarios y mostrarlos como párrafos
         for (let i = 0; i < hourly.time.length; i++) {
-            const row = $("<tr></tr>");
-            
             // Extraer solo la hora del timestamp
             const hora = hourly.time[i].split('T')[1];
             
-            row.append($("<td></td>").text(hora));
-            row.append($("<td></td>").text(hourly.temperature_2m[i]));
-            row.append($("<td></td>").text(hourly.apparent_temperature[i]));
-            row.append($("<td></td>").text(hourly.rain[i]));
-            row.append($("<td></td>").text(hourly.relative_humidity_2m[i]));
-            row.append($("<td></td>").text(hourly.wind_speed_10m[i]));
-            row.append($("<td></td>").text(hourly.wind_direction_10m[i]));
+            const p = $("<p></p>").text(
+                "Hora: " + hora + 
+                " - Temperatura: " + hourly.temperature_2m[i] + "°C" +
+                " - Sensación térmica: " + hourly.apparent_temperature[i] + "°C" +
+                " - Lluvia: " + hourly.rain[i] + "mm" +
+                " - Humedad: " + hourly.relative_humidity_2m[i] + "%" +
+                " - Velocidad viento: " + hourly.wind_speed_10m[i] + "km/h" +
+                " - Dirección viento: " + hourly.wind_direction_10m[i] + "°"
+            );
             
-            tbody.append(row);
+            article.append(p);
         }
-
-        table.append(tbody);
-        article.append(table);
 
         // Añadir al documento
         $("section").append(article);
@@ -196,36 +177,22 @@ class Ciudad {
         const article = $("<article></article>");
         article.append("<h4>Meteorología de los días de entrenamientos</h4>");
 
-        const table = $("<table></table>");
-        const thead = $("<thead></thead>");
-        const headerRow = $("<tr></tr>");
-        
-        headerRow.append("<th>Fecha</th>");
-        headerRow.append("<th>Temperatura media (°C)</th>");
-        headerRow.append("<th>Lluvia media (mm)</th>");
-        headerRow.append("<th>Velocidad viento media (km/h)</th>");
-        headerRow.append("<th>Humedad media (%)</th>");
-        
-        thead.append(headerRow);
-        table.append(thead);
-
-        const tbody = $("<tbody></tbody>");
-
         for (const fecha in medias) {
-            const row = $("<tr></tr>");
             const media = medias[fecha];
             
-            row.append($("<td></td>").text(fecha));
-            row.append($("<td></td>").text(media.temperatura));
-            row.append($("<td></td>").text(media.lluvia));
-            row.append($("<td></td>").text(media.velocidadViento));
-            row.append($("<td></td>").text(media.humedad));
+            const h5 = $("<h5></h5>").text("Día: " + fecha);
+            article.append(h5);
             
-            tbody.append(row);
+            const pTemp = $("<p></p>").text("Temperatura media: " + media.temperatura + "°C");
+            const pLluvia = $("<p></p>").text("Lluvia media: " + media.lluvia + "mm");
+            const pViento = $("<p></p>").text("Velocidad viento media: " + media.velocidadViento + "km/h");
+            const pHumedad = $("<p></p>").text("Humedad media: " + media.humedad + "%");
+            
+            article.append(pTemp);
+            article.append(pLluvia);
+            article.append(pViento);
+            article.append(pHumedad);
         }
-
-        table.append(tbody);
-        article.append(table);
 
         $("section").append(article);
     }

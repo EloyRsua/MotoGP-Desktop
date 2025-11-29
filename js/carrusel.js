@@ -27,7 +27,7 @@ class Carrusel {
             console.error("Status: " + textStatus);
             console.error("Error: " + errorThrown);
             $("main").append("<p>Error al cargar las imágenes del circuito</p>");
-        });
+        }); 
     }
 
     // Método para procesar el JSON recibido de Flickr
