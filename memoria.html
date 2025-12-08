@@ -6,69 +6,99 @@
     <!-- Datos que describen el documento -->
     <meta charset="UTF-8" />
     <meta name="author" content="Eloy Rubio Suárez" />
-    <meta name="description" content="Información meteorológica del circuito de MotoGP en Cowes, Australia" />
-    <meta name="keywords" content="motos,motor,deporte,meteorologia,tiempo,clima,carrera,gran premio,mundial,2025,Cowes,Australia,Phillip Island" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MotoGP - Meteorología</title>
+    <meta name="description" content="Juego de memoria con cartas de MotoGP" />
+    <meta name="keywords" content="motos,motor,deporte,juego,memoria,cartas,motogp,gran premio,mundial,2025" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotoGP-Juegos-Memoria</title>
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout-cards.css" />
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
-    <link rel="icon" href="multimedia/icon.png" type="image/png" />
+    <link rel="stylesheet" type="text/css" href="estilo/cards.css" />
+    <link rel="icon" href="multimedia/icon.png" type="image/png">
     
-    <!-- jQuery Core 3.7.1 minificado -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
-            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
-            crossorigin="anonymous"></script>
+    <script src="js/cronometro.js"></script>
 </head>
 
 <body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
     <header>
         <h1><a href="index.html">MotoGP Desktop</a></h1>
         <nav>
             <a href="index.html">Inicio</a>
             <a href="piloto.html">Piloto</a>
             <a href="circuito.html">Circuito</a>
-            <a href="meteorologia.html" class="active">Meteorología</a>
-            <a href="clasificaciones.php">Clasificaciones</a>
-            <a href="juegos.html">Juegos</a>
+            <a href="meteorologia.html">Meteorología</a>
+            <a href="clasificaciones.html">Clasificaciones</a>
+            <a href="juegos.html" class="active">Juegos</a>
             <a href="ayuda.html">Ayuda</a>
         </nav>
     </header>
     
-    <p><a href="index.html">Inicio</a> &gt;&gt; <strong>Meteorología</strong></p>
+    <p><a href="index.html">Inicio</a> &gt;&gt;<a href="juegos.html">Juegos</a> &gt;&gt; Memoria </p>
     
+    <section>
+        <h2>Juego de memoria con cartas</h2>
+        <p>00:00.0</p>
+    </section>
+
     <main>
-        <h2>Meteorología de MotoGP-Desktop</h2>
-        
-        <section>
-            <h3>Ciudad de Cowes (AUS)</h3>
-            <script src="js/ciudad.js"></script>
-            <script>
-                // Crear una instancia de la clase Ciudad para Cowes
-                let cowes = new Ciudad("Cowes", "Australia", "australiano/a");
-                
-                // Rellenar los demás datos
-                // Coordenadas de Phillip Island Circuit
-                cowes.setDatos(6500, -38.5097, 145.3411);
+        <article onclick="memoria.voltearCarta(this)">
+            <h3>Memory Card</h3>
+            <img src="multimedia/logos/honda.svg" alt="Logo-Honda">
+        </article>
+        <article onclick="memoria.voltearCarta(this)">
+            <h3>Memory Card</h3>
+            <img src="multimedia/logos/honda.svg" alt="Logo-Honda">
+        </article>
 
-                // Mostrar información básica
-                cowes.escribirInfo();
+        <article onclick="memoria.voltearCarta(this)">
+            <h3>Memory Card</h3>
+            <img src="multimedia/logos/yamaha.svg" alt="Logo-Yamaha">
+        </article>
+        <article onclick="memoria.voltearCarta(this)">
+            <h3>Memory Card</h3>
+            <img src="multimedia/logos/yamaha.svg" alt="Logo-Yamaha">
+        </article>
 
-                // Mostrar información secundaria (gentilicio y población)
-                cowes.escribirInfoSecundaria();
+        <article onclick="memoria.voltearCarta(this)">
+            <h3>Memory Card</h3>
+            <img src="multimedia/logos/ducati.svg" alt="Logo-Ducati">
+        </article>
+        <article onclick="memoria.voltearCarta(this)">
+            <h3>Memory Card</h3>
+            <img src="multimedia/logos/ducati.svg" alt="Logo-Ducati">
+        </article>
 
-                // Mostrar coordenadas del punto central
-                cowes.escribirCoordenadas();
+        <article onclick="memoria.voltearCarta(this)">
+            <h3>Memory Card</h3>
+            <img src="multimedia/logos/ktm.svg" alt="Logo-KTM">
+        </article>
+        <article onclick="memoria.voltearCarta(this)">
+            <h3>Memory Card</h3>
+            <img src="multimedia/logos/ktm.svg" alt="Logo-KTM">
+        </article>
 
-                // Obtener y mostrar información meteorológica
-                // Fecha de ejemplo: 20 de octubre de 2024 (ajusta según la fecha real de la carrera)
-                cowes.getMeteorologiaCarrera("2024-10-20");
-                
-                // Obtener meteorología de los 3 días de entrenamientos
-                // Fechas de ejemplo: 17, 18 y 19 de octubre de 2024
-                cowes.getMeteorologiaEntrenos("2024-10-17", "2024-10-19");
-            </script>
-        </section>
+        <article onclick="memoria.voltearCarta(this)">
+            <h3>Memory Card</h3>
+            <img src="multimedia/logos/aprilia.svg" alt="Logo-Aprilia">
+        </article>
+        <article onclick="memoria.voltearCarta(this)">
+            <h3>Memory Card</h3>
+            <img src="multimedia/logos/aprilia.svg" alt="Logo-Aprilia">
+        </article>
+
+        <article onclick="memoria.voltearCarta(this)">
+            <h3>Memory Card</h3>
+            <img src="multimedia/logos/motogp.svg" alt="Logo-MotoGP">
+        </article>
+        <article onclick="memoria.voltearCarta(this)">
+            <h3>Memory Card</h3>
+            <img src="multimedia/logos/motogp.svg" alt="Logo-MotoGP">
+        </article>
     </main>
+
+    <script src="js/memoria.js"></script>
+
 </body>
 
 </html>
