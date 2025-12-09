@@ -281,20 +281,20 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 
                 <article>
                     <h3>Pregunta 5</h3>
-                    <p>¿Es fácil identificar en qué sección del sitio te encuentras?</p>
-                    <label><input type="radio" name="pregunta5" value="a" required> Muy difícil</label>
-                    <label><input type="radio" name="pregunta5" value="b"> Difícil</label>
-                    <label><input type="radio" name="pregunta5" value="c"> Fácil</label>
-                    <label><input type="radio" name="pregunta5" value="d"> Muy fácil</label>
+                    <p>¿Cuál es el nombre del piloto?</p>
+                    <label><input type="radio" name="pregunta5" value="a" required> Enea Bastianini</label>
+                    <label><input type="radio" name="pregunta5" value="b"> Marc Márquez</label>
+                    <label><input type="radio" name="pregunta5" value="c"> Valentino Rossi</label>
+                    <label><input type="radio" name="pregunta5" value="d"> No lo sé</label>
                 </article>
                 
                 <article>
                     <h3>Pregunta 6</h3>
-                    <p>¿El sitio web incluye contenido multimedia (imágenes, videos, etc.)?</p>
-                    <label><input type="radio" name="pregunta6" value="a" required> No incluye</label>
-                    <label><input type="radio" name="pregunta6" value="b"> Solo imágenes</label>
-                    <label><input type="radio" name="pregunta6" value="c"> Imágenes y videos</label>
-                    <label><input type="radio" name="pregunta6" value="d"> Contenido muy variado</label>
+                    <p>¿Cuál es el país del circuito?</p>
+                    <label><input type="radio" name="pregunta6" value="a" required> España</label>
+                    <label><input type="radio" name="pregunta6" value="b"> Alemania</label>
+                    <label><input type="radio" name="pregunta6" value="c"> Austria</label>
+                    <label><input type="radio" name="pregunta6" value="d"> Australia</label>
                 </article>
                 
                 <article>
@@ -308,29 +308,28 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 
                 <article>
                     <h3>Pregunta 8</h3>
-                    <p>¿Los colores y el diseño del sitio son agradables visualmente?</p>
-                    <label><input type="radio" name="pregunta8" value="a" required> Nada agradable</label>
-                    <label><input type="radio" name="pregunta8" value="b"> Poco agradable</label>
-                    <label><input type="radio" name="pregunta8" value="c"> Agradable</label>
-                    <label><input type="radio" name="pregunta8" value="d"> Muy agradable</label>
+                    <p>¿Cuál es la población del lugar del circuito?</p>
+                    <label><input type="radio" name="pregunta8" value="a" required> 8000</label>
+                    <label><input type="radio" name="pregunta8" value="b"> 100000</label>
+                    <label><input type="radio" name="pregunta8" value="c"> Más de 100000</label>
+                    <label><input type="radio" name="pregunta8" value="d"> Pequeño, menos de 8000</label>
                 </article>
                 
                 <article>
                     <h3>Pregunta 9</h3>
-                    <p>¿El texto del sitio es fácil de leer?</p>
-                    <label><input type="radio" name="pregunta9" value="a" required> Muy difícil de leer</label>
-                    <label><input type="radio" name="pregunta9" value="b"> Difícil de leer</label>
-                    <label><input type="radio" name="pregunta9" value="c"> Fácil de leer</label>
-                    <label><input type="radio" name="pregunta9" value="d"> Muy fácil de leer</label>
+                    <p>¿Cuál es el dorsal del piloto?</p>
+                    <label><input type="radio" name="pregunta9" value="a" required> 24</label>
+                    <label><input type="radio" name="pregunta9" value="b"> 32</label>
+                    <label><input type="radio" name="pregunta9" value="c"> 33</label>
+                    <label><input type="radio" name="pregunta9" value="d">23</label>
                 </article>
                 
                 <article>
                     <h3>Pregunta 10</h3>
-                    <p>En general, ¿te ha resultado fácil navegar por el sitio web?</p>
-                    <label><input type="radio" name="pregunta10" value="a" required> Muy difícil</label>
-                    <label><input type="radio" name="pregunta10" value="b"> Difícil</label>
-                    <label><input type="radio" name="pregunta10" value="c"> Fácil</label>
-                    <label><input type="radio" name="pregunta10" value="d"> Muy fácil</label>
+                    <p>¿Acabó en el top 5 en la temporada 2024?</p>
+                    <label><input type="radio" name="pregunta10" value="a" required> Sí</label>
+                    <label><input type="radio" name="pregunta10" value="b"> No</label>
+                    <label><input type="radio" name="pregunta10" value="c"> No lo sé</label>
                 </article>
                 
                 <button type="submit" name="terminar_prueba">Terminar Prueba</button>
