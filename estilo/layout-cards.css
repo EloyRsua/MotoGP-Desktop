@@ -41,7 +41,7 @@ main {
     
     /* Especificidad: 002 */
     main article {
-        width: 95%;
-        max-width: 12.5em;
+        width: 100%;
+        min-height: 15em;
     }
 }
