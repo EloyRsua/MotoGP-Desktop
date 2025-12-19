@@ -24,13 +24,10 @@
         <a href="ayuda.html">Ayuda</a>
     </nav>
 </header>
-
 <p><a href="index.html">Inicio</a> &gt;&gt; <strong>Circuito</strong></p>
-
 <main>
 <section>
 <h2>Phillip Island</h2>
-
 <h3>Datos Generales</h3>
 <p>Localidad: Phillip Island</p>
 <p>País: Australia</p>
@@ -42,26 +39,25 @@
 <p>Hora: 05:00:00</p>
 <p>Vencedor: Raúl Fernández</p>
 </section>
-
 <section>
 <h3>Clasificación</h3>
 <table>
+    <caption>Clasificación de los 3 primeros pilotos</caption>
     <thead>
         <tr>
-            <th>Posición</th>
-            <th>Piloto</th>
+            <th scope="col" id="posicion">Posición</th>
+            <th scope="col" id="piloto">Piloto</th>
         </tr>
     </thead>
     <tbody>
-        <tr><td>1</td><td>Marc Márquez</td></tr>
-        <tr><td>2</td><td>Alex Márquez</td></tr>
-        <tr><td>3</td><td>Marco Bezzecchi</td></tr>
+        <tr><td headers="posicion">1</td><td headers="piloto">Marc Márquez</td></tr>
+        <tr><td headers="posicion">2</td><td headers="piloto">Alex Márquez</td></tr>
+        <tr><td headers="posicion">3</td><td headers="piloto">Marco Bezzecchi</td></tr>
     </tbody>
 </table>
 </section>
 <section>
 <h3>Fotos</h3>
-
 <picture>
     <source media="(min-width: 800px)" srcset="./multimedia/circuito.jpg"/>
     <source media="(max-width: 799px)" srcset="./multimedia/circuito-small.jpg"/>
@@ -70,7 +66,6 @@
 </section>
 <section>
 <h3>Videos</h3>
-
 <video controls preload="auto" width="600">
     <source src="./multimedia/Circuito.mp4" type="video/mp4"/>
     <source src="./multimedia/Circuito.webm" type="video/webm"/>

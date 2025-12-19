@@ -80,30 +80,34 @@ class Ciudad {
     }
 
     // Ejercicio 3 - Tarea 4: Procesar información del JSON de la carrera
-    procesarJSONCarrera(datos) {
-        // Extraer datos horarios
-        const hourly = datos.hourly;
-        const daily = datos.daily;
+   // Ejercicio 3 - Tarea 4: Procesar información del JSON de la carrera
+procesarJSONCarrera(datos) {
+    // Extraer datos horarios
+    const hourly = datos.hourly;
+    const daily = datos.daily;
 
-        // Crear estructura HTML para mostrar los datos
-        const article = $("<article></article>");
-        article.append("<h4>Meteorología del día de la carrera</h4>");
+    // Crear estructura HTML para mostrar los datos
+    const article = $("<article></article>");
+    article.append("<h4>Meteorología del día de la carrera</h4>");
 
-        // Información diaria (sunrise/sunset) - Formatear horas
-        const amanecer = daily.sunrise[0].split('T')[1];
-        const atardecer = daily.sunset[0].split('T')[1];
-        const pSunrise = $("<p></p>").text("Amanecer: " + amanecer);
-        const pSunset = $("<p></p>").text("Puesta de sol: " + atardecer);
-        article.append(pSunrise);
-        article.append(pSunset);
+    // Información diaria (sunrise/sunset) - Formatear horas
+    const amanecer = daily.sunrise[0].split('T')[1];
+    const atardecer = daily.sunset[0].split('T')[1];
+    const pSunrise = $("<p></p>").text("Amanecer: " + amanecer);
+    const pSunset = $("<p></p>").text("Puesta de sol: " + atardecer);
+    article.append(pSunrise);
+    article.append(pSunset);
 
-        // Recorrer datos horarios y mostrarlos como párrafos
-        for (let i = 0; i < hourly.time.length; i++) {
-            // Extraer solo la hora del timestamp
-            const hora = hourly.time[i].split('T')[1];
-            
+    // Recorrer datos horarios y mostrarlos como párrafos
+    for (let i = 0; i < hourly.time.length; i++) {
+        // Extraer solo la hora del timestamp
+        const horaCompleta = hourly.time[i].split('T')[1];
+        const hora = parseInt(horaCompleta.split(':')[0]); // Extraer la hora como número
+        
+        // Filtrar solo las horas entre 11:00 y 17:00 (inclusive)
+        if (hora >= 11 && hora <= 17) {
             const p = $("<p></p>").text(
-                "Hora: " + hora + 
+                "Hora: " + horaCompleta + 
                 " - Temperatura: " + hourly.temperature_2m[i] + "°C" +
                 " - Sensación térmica: " + hourly.apparent_temperature[i] + "°C" +
                 " - Lluvia: " + hourly.rain[i] + "mm" +
@@ -114,11 +118,11 @@ class Ciudad {
             
             article.append(p);
         }
-
-        // Añadir al documento
-        $("section").append(article);
     }
 
+    // Añadir al documento
+    $("section").append(article);
+}
     // Ejercicio 3 - Tarea 6: Obtener datos meteorológicos de los días de entrenamientos
     getMeteorologiaEntrenos(fechaInicio, fechaFin) {
         const url = `https://archive-api.open-meteo.com/v1/archive?latitude=${this.coordenadas.latitud}&longitude=${this.coordenadas.longitud}&start_date=${fechaInicio}&end_date=${fechaFin}&hourly=temperature_2m,rain,wind_speed_10m,relative_humidity_2m&timezone=auto`;

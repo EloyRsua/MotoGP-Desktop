@@ -54,6 +54,7 @@ header {
     */
     background-color: #262626;
     border-radius: 0.8em;
+    padding: 1em;  
 }
 
 /*Especificidad 001*/
@@ -134,6 +135,7 @@ section,aside {
     background-color: #262626;
     border-radius: 0.8em;
     border: 0.1em solid #ddd;
+    padding: 2em;
 
 }
 

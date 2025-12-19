@@ -7,7 +7,7 @@ def generar_html_circuito(xml_path):
         tree = ET.parse(xml_path)
         root = tree.getroot()
     except (IOError, ET.ParseError) as e:
-        print(f"❌ Error al leer el XML: {e}")
+        print(f"Error al leer el XML: {e}")
         return
 
     ns = {'uniovi': 'http://www.uniovi.es'}
@@ -24,9 +24,13 @@ def generar_html_circuito(xml_path):
     hora = root.findtext('uniovi:hora', '?', ns)
     vencedor = root.findtext('uniovi:vencedor', '?', ns)
 
-    # Multimedia
-    fotos = [f.text.replace("\\", "/") for f in root.findall('uniovi:galeria_fotografias/uniovi:fotografia', ns)]
-    videos = [v.text.replace("\\", "/") for v in root.findall('uniovi:galeria_videos/uniovi:video', ns)]
+    # Multimedia - procesar rutas
+    fotos_raw = [f.text.replace("\\", "/") for f in root.findall('uniovi:galeria_fotografias/uniovi:fotografia', ns)]
+    videos_raw = [v.text.replace("\\", "/") for v in root.findall('uniovi:galeria_videos/uniovi:video', ns)]
+    
+    # Convertir rutas relativas a formato ./
+    fotos = [f"./{ foto.split('/')[-2] }/{ foto.split('/')[-1].replace('.webp', '.jpg') }" for foto in fotos_raw]
+    videos = [f"./{ video.split('/')[-2] }/{ video.split('/')[-1] }" for video in videos_raw]
 
     # Referencias
     referencias = [ref.text for ref in root.findall('uniovi:referencias/uniovi:referencia', ns)]
@@ -64,13 +68,10 @@ def generar_html_circuito(xml_path):
         <a href="ayuda.html">Ayuda</a>
     </nav>
 </header>
-
 <p><a href="index.html">Inicio</a> &gt;&gt; <strong>Circuito</strong></p>
-
 <main>
 <section>
 <h2>{nombre}</h2>
-
 <h3>Datos Generales</h3>
 <p>Localidad: {localidad}</p>
 <p>País: {pais}</p>
@@ -84,22 +85,22 @@ def generar_html_circuito(xml_path):
 </section>
 """
 
-    # Clasificación como tabla
+    # Clasificación como tabla ACCESIBLE
     if clasificacion:
-        html_content += """
-<section>
+        html_content += """<section>
 <h3>Clasificación</h3>
 <table>
+    <caption>Clasificación de los 3 primeros pilotos</caption>
     <thead>
         <tr>
-            <th>Posición</th>
-            <th>Piloto</th>
+            <th scope="col" id="posicion">Posición</th>
+            <th scope="col" id="piloto">Piloto</th>
         </tr>
     </thead>
     <tbody>
 """
         for pos, piloto in clasificacion[:3]:  # solo los 3 primeros
-            html_content += f"        <tr><td>{pos}</td><td>{piloto}</td></tr>\n"
+            html_content += f"        <tr><td headers=\"posicion\">{pos}</td><td headers=\"piloto\">{piloto}</td></tr>\n"
         html_content += """    </tbody>
 </table>
 </section>
@@ -109,11 +110,11 @@ def generar_html_circuito(xml_path):
     if fotos:
         html_content += "<section>\n<h3>Fotos</h3>\n"
         for foto in fotos:
-            html_content += f"""
-<picture>
-    <source media="(min-width: 800px)" srcset="../{foto}"/>
-    <source media="(max-width: 799px)" srcset="../{foto}"/>
-    <img src="../{foto}" alt="Foto del circuito {nombre}"/>
+            foto_small = foto.replace('.jpg', '-small.jpg')
+            html_content += f"""<picture>
+    <source media="(min-width: 800px)" srcset="{foto}"/>
+    <source media="(max-width: 799px)" srcset="{foto_small}"/>
+    <img src="{foto}" alt="Foto del circuito {nombre}"/>
 </picture>
 """
         html_content += "</section>\n"
@@ -122,11 +123,10 @@ def generar_html_circuito(xml_path):
     if videos:
         html_content += "<section>\n<h3>Videos</h3>\n"
         for video in videos:
-            html_content += f"""
-<video controls preload="auto" width="600">
-    <source src="../{video}" type="video/mp4"/>
-    <source src="../{video}" type="video/webm"/>
-    Tu navegador no soporta el video.
+            video_webm = video.replace('.mp4', '.webm')
+            html_content += f"""<video controls preload="auto" width="600">
+    <source src="{video}" type="video/mp4"/>
+    <source src="{video_webm}" type="video/webm"/>
 </video>
 """
         html_content += "</section>\n"
@@ -150,5 +150,5 @@ def generar_html_circuito(xml_path):
 
 # === Uso ===
 if __name__ == "__main__":
-    archivoXML = r"C:\Users\Eloy\Desktop\SEW\MotoGP-Desktop\xml\circuitoEsquema.xml"
+    archivoXML = "/Applications/XAMPP/xamppfiles/htdocs/MotoGP-Desktop/xml/circuitoEsquema.xml"  
     generar_html_circuito(archivoXML)
