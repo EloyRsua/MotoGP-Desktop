@@ -6,7 +6,7 @@
 main article {
     width: 22vw;
     aspect-ratio: 3/4;
-    height: 20em;
+    height: auto;
     position: relative;
     transform: scale(1);
     cursor: pointer;
