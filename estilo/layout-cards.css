@@ -27,12 +27,21 @@ main {
     margin: auto;
 }
 
-@media (min-width: 320px) and (max-width: 799px) {
+@media (min-width: 20em) and (max-width: 49.9375em) {
     /* Especificidad: 001 */
     main {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
         align-items: center;
+        column-gap: 1em;
+        row-gap: 1em;
+        padding: 0 1em;
+    }
+    
+    /* Especificidad: 002 */
+    main article {
+        width: 95%;
+        max-width: 12.5em;
     }
 }
