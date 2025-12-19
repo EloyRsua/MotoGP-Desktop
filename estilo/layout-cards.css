@@ -28,8 +28,8 @@ main {
 }
 
 @media (min-width: 20em) and (max-width: 49.9375em) {
-    /* Especificidad: 001 */
-    main {
+        /* Especificidad: 001 */
+       main {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-items: stretch;
@@ -37,13 +37,11 @@ main {
         column-gap: 0.5em;
         row-gap: 0.5em;
         padding: 0 0.5em;
-        max-width: 100%;
     }
     
     /* Especificidad: 002 */
     main article {
         width: 100%;
-        min-height: 20em;
-        aspect-ratio: 3/4;
+        min-height: 18em;
     }
 }
