@@ -27,21 +27,25 @@ main {
     margin: auto;
 }
 
-@media (min-width: 20em) and (max-width: 49.9375em) {
-        /* Especificidad: 001 */
-       main {
-        display: grid;
+@media (max-width: 799px) {
+    /* Especificidad 001*/
+    main {
+        /* Pasamos a 2 columnas para que cada tarjeta sea mucho más ancha */
         grid-template-columns: repeat(2, 1fr);
-        justify-items: stretch;
-        align-items: center;
-        column-gap: 0.5em;
-        row-gap: 0.5em;
-        padding: 0 0.5em;
+        column-gap: 1.5rem;
+        row-gap: 1.5rem;
+        padding: 1rem;
     }
-    
-    /* Especificidad: 002 */
+    /* Especificidad 002*/
     main article {
-        width: 100%;
-        min-height: 18em;
+        /* Eliminamos el min-height fijo y dejamos que el aspect-ratio y el gap
+           hagan que la carta sea lo más grande posible según el ancho del móvil */
+        min-height: auto; 
+        padding: 2rem 1rem;
+    }
+
+    /* Especificidad 003*/
+    main article img {
+        max-width: 150px; /* Permitimos que el logo crezca más en móvil */
     }
 }
