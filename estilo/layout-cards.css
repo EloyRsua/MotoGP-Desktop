@@ -1,51 +1,27 @@
-/* Especificidad: 001 */
-section {
-    text-align: center;
-    margin: 1em 0;
+/* ESPECIFICIDAD: 001 */
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.8em;
+    justify-items: stretch;
+    align-items: start;
+    margin: 2rem auto;
 }
 
-/* Especificidad: 002 */
-section h2 {
-    margin: 0.5em 0;
-}
-
-/* Especificidad: 002 */
 section p {
     font-size: 1.5em;
     font-weight: bold;
     margin: 0.5em 0;
+    text-align: center;
 }
 
-/* Especificidad: 001 */
-main {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 0.07em;
-    row-gap: 0.25rem;
-    justify-items: center;
-    align-items: center;
-    margin: auto;
-}
 
+/* MEDIA QUERY */
 @media (max-width: 799px) {
-    /* Especificidad 001*/
-    main {
-        /* Pasamos a 2 columnas para que cada tarjeta sea mucho más ancha */
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 1.5rem;
-        row-gap: 1.5rem;
-        padding: 1rem;
-    }
-    /* Especificidad 002*/
-    main article {
-        /* Eliminamos el min-height fijo y dejamos que el aspect-ratio y el gap
-           hagan que la carta sea lo más grande posible según el ancho del móvil */
-        min-height: auto; 
-        padding: 2rem 1rem;
-    }
 
-    /* Especificidad 003*/
-    main article img {
-        max-width: 150px; /* Permitimos que el logo crezca más en móvil */
+    /* ESPECIFICIDAD: 001 */
+    main {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: stretch;
     }
 }
