@@ -85,17 +85,17 @@ svg {
     /* Especificidad: 0,0,1 - Adaptabilidad de las tablas para móviles */  
     table {
         width: 100%;            /* que ocupe todo el ancho disponible */
-        font-size: 0.8rem;      /* fuente más pequeña */
+        font-size: 0.6rem;      /* fuente más pequeña */
         border-collapse: collapse;
     }
     /* Especificidad: 0,0,1 0,0,1 - Adaptabilidad de las tablas para móviles */
     th, td {
-        padding: 0.2em 0.3em;   /* menos espacio interno */
+        padding: 0.1em 0.2em;   /* menos espacio interno */
         text-align: center;     /* opcional, para centrar los números */
     }
     /* Especificidad: 0,0,1 - Adaptabilidad de las tablas para móviles */
     th {
-        font-size: 0.85rem;     /* encabezados un poco más grandes que los datos */
+        font-size: 0.65rem;     /* encabezados un poco más grandes que los datos */
     }
 
 }
