@@ -1,3 +1,4 @@
+/*Eloy Rubio Suárez UO298184*/
 /* ESPECIFICIDAD: 001 */
 main {
     display: grid;
@@ -8,6 +9,7 @@ main {
     margin: 2rem auto;
 }
 
+/* ESPECIFICIDAD: 002 */
 section p {
     font-size: 1.5em;
     font-weight: bold;
