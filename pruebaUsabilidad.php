@@ -3,7 +3,7 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 // IMPORTANTE: Incluir las clases ANTES de session_start()
-require_once('Cronometro.class.php');
+require_once('cronometro.class.php');
 require_once('PruebaUsabilidad.class.php');
 
 session_start();

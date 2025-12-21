@@ -21,6 +21,9 @@ section p {
 
     /* ESPECIFICIDAD: 001 */
     main {
+         /* Aviso sobre redefinición de grid-template-columns y justify-items 
+            Redefinición permitida en media query
+        */
         grid-template-columns: repeat(2, 1fr);
         justify-items: stretch;
     }

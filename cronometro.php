@@ -1,5 +1,5 @@
 <?php
-require_once 'Cronometro.class.php';
+require_once 'cronometro.class.php';
 
 session_start();
 
