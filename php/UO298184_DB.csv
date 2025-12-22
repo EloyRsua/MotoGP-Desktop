@@ -1,0 +1,46 @@
+"idObservacion","idPrueba","comentariosFacilitador"
+"1","1","- Completa la prueba sin problemas
+- Encuentra todos los datos sin mayor dificultad menos el país.
+- Al final de la prueba se da cuenta de que leer los párrafos es un poco difícil por que no hay casi sangría"
+"2","2","Tuvo dificultades para encontrar la información del circuito relativa al nombre, esperaba encontrarlo en el apartado Circuito, por lo demás no tuvo mayores problemas y respondió a todo con claridad.
+
+Por otro lado navegando libremente por la página identificó con dificultades las horas de la meteorología"
+"3","3","Ve con facilidad la información y realiza la prueba con relativa soltura, dice textualmente ""Esta bien es fácil y manejable"".
+
+Por otra parte echa de menos información relativa al circuito en el apartado circuito pero la encuentra con pocas dificultades, navegar se le hace muy sencillo e intuitivo.
+
+Dice textualmente ""No se me ocurrió entrar en meteorología para ver datos del circuito pero por cacharrear lo encontré"""
+"4","4","Se mueve con soltura y encuentra la página muy fácil de utilizar, dice que le resulta ""divertida"".
+
+Por otro lado se lleva un chasco al navegar por su cuenta y ver que no es adaptable el juego de cartas"
+"5","5","Navega con algo de torpeza pero por su nivel de pericia informática, quizá debía ser bajo.
+
+Por otro lado encuentra las cosas con facilidad incluso la parte de meteorología.
+
+Encuentra toda la información con facilidad pero con algo de lentitud"
+"6","6","Hace uso intensivo de las migas de navegación del sitio"
+"7","7","Navega con facilidad pero detecta que la tabla sobresale de la página"
+"idPericia","nivelPericia"
+"3","Avanzado"
+"4","Experto"
+"2","Intermedio"
+"1","Principiante"
+"idPrueba","idUsuario","dispositivo","tiempoTotal","tareaCompletada","comentariosUsuario","propuestasMejora","valoracion"
+"1","PruebaUsabilidad","Tableta","154.535","1","0","- Menu mas separado
+- Mas evidente el país
+- Algo de sangría","8"
+"2","javier","Ordenador","359.273","1","0","Las horas en metodología en otro color","8"
+"3","Pedro","Tableta","132.63","1","0","Mover a circuito los datos","6"
+"4","María","Teléfono","228.315","1","0","- Marcar las horas de mejor manera
+- Mejorar el juego de cartas","6"
+"5","Elina","Ordenador","494.663","1","0",,"9"
+"6","Vanessa","Tableta","207.88","1","0","Nada","9"
+"7","Roberto","Teléfono","121.339","1","0","- Mas pequeña la tabla","7"
+"idUsuario","profesion","edad","genero","idPericia"
+"Elina","Administrativa","60","Femenino","2"
+"javier","Jubilado","69","Masculino","2"
+"María","Secretaria","60","Femenino","2"
+"Pedro","Dependiente","34","Masculino","2"
+"PruebaUsabilidad","Estudiante","20","Masculino","4"
+"Roberto","Celador","25","Masculino","2"
+"Vanessa","TCA","35","Femenino","1"

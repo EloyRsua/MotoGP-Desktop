@@ -26,11 +26,16 @@ article[data-estado="revelada"]{
 /* especificidad: 002 */
 article h3,
 article img {
+     /* Aviso sobre color de primer plano no establecido
+       Hay un color de fondo establecido (#1c7dcc) y no hay color de primer plano
+       Establecemos color de primer plano explícitamente para h3 (color: #FFFFFF;)
+    */
     width: 100%;
     height: 100%;
     position: absolute;
     border-radius: 0.5em;
-    background: #1c7dcc;
+    /* Cambio de color de fondo para mejorar contraste */
+    background: #145B94;
     backface-visibility: hidden;
 }
 
@@ -42,6 +47,8 @@ article h3 {
     justify-content: center;
     align-items: center;
     margin: 0;
+    color: #FFFFFF;
+
 }
 
 /* Regla para rotar las imágenes y que se vean correctamente cuando se giran las cartas */
